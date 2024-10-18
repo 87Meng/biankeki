@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>勉Keki</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <style>
+    /* section 1  */
+    .index-banner {
+      display: flex;
+      width: 100%;
+      height: 750px;
+      justify-content: center;
+      align-items: center;
+      gap: 90px;
+      position: relative;
+      top: 100px;
+    }
+
+    .cheese-cake {
+      width: 480px;
+      height: auto;
+      position: absolute;
+      top: 26px;
+    }
+
+    .fruit-cake {
+      width: 480px;
+      height: auto;
+      position: absolute;
+      right: 10px;
+      bottom: 65px;
+    }
+
+    .banner-img {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+    }
+
+    .banner-title {
+      color: #5b4722;
+      writing-mode: vertical-rl;
+      line-height: 3.5;
+      letter-spacing: 0.5rem;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    /* section 2  */
+    .index-news {
+      display: flex;
+      width: 100%;
+      height: 400px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 150px;
+    }
+
+    .index-news-title {
+      color: #5b4722;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 35px;
+      font-weight: bold;
+    }
+
+    .index-news-content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 80px;
+    }
+
+    .arrow {
+      margin: 0px 30px;
+    }
+
+    .news-img {
+      width: 400px;
+    }
+
+    .news-img img {
+      width: 100%;
+    }
+
+    .news-text {
+      color: #5b4722;
+      display: flex;
+      height: 245px;
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
+      width: 450px;
+    }
+
+    .news-text p {
+      width: 100%;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 1px;
+    }
+
+    .news-rm-btn {
+      height: 245px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    button {
+      border-radius: 10px;
+      background: var(--btn-color, #de7134);
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+      width: 175px;
+      height: auto;
+      padding: 10px 0px;
+    }
+    /* section 3  */
+    .index-about {
+      display: flex;
+      width: 100%;
+      height: 750px;
+      padding: 112px 90px;
+    }
+
+    .index-about-wrapper {
+      display: flex;
+      height: 500px;
+      gap: 40px;
+    }
+
+    .about-img {
+      display: flex;
+      width: 430px;
+      height: 500px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .about-img img {
+      width: auto;
+      height: 100%;
+    }
+
+    .about-text {
+      display: flex;
+      width: 607px;
+      height: 500px;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: auto;
+    }
+
+    .about-text h3 {
+      color: #5b4722;
+      font-size: 30px;
+    }
+
+    .about-text p {
+      color: #5b4722;
+      font-size: 18px;
+      font-style: normal;
+      line-height: 40px; /* 208.333% */
+      letter-spacing: 2px;
+    }
+
+    .about-rm-btn {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      padding: 10px 0px;
+    }
+    /* section 4  */
+
+    .index-products {
+      display: flex;
+      width: 100%;
+      height: 950px;
+      padding: 50px 60px;
+      flex-direction: column;
+      gap: 77px;
+    }
+
+    .index-products-title {
+      display: flex;
+    }
+
+    .index-products-title h3 {
+      color: #5b4722;
+      font-size: 30px;
+    }
+
+    .product-list-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 80px;
+    }
+
+    .product-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 80px;
+    }
+
+    .product {
+      display: flex;
+      width: 327px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product-name {
+      color: #5b4722;
+      font-size: 18px;
+    }
+
+    .price {
+      color: #5b4722;
+      font-size: 14px;
+    }
+  </style>
+  <body>
+    <header>
+      <div class="header-wrapper">
+        <img src="./assests/img/logo.svg" alt="" />
+        <nav>
+          <div class="nav-title">
+            <ul>
+              <li><a href="#" class="active">HOME</a></li>
+              <li><a href="./about.html">ABOUT</a></li>
+              <li><a href="./news.html">NEWS</a></li>
+              <li>
+                <a href="./products.html">PRODUCTS</a>
+                <ul class="dropdown">
+                  <li><a href="#">乳酪蛋糕</a></li>
+                  <li><a href="#">生乳捲</a></li>
+                  <li><a href="#">生日蛋糕</a></li>
+                  <li><a href="#">小點</a></li>
+                </ul>
+              </li>
+
+              <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+          <div class="nav-icon">
+            <ul>
+              <li>
+                <a href="./login.html"
+                  ><img
+                    src="./assests/img/account.svg"
+                    class="account-icon"
+                    alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./assests/img/cart.svg" class="cart-icon" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- banner section  -->
+    <section class="index-banner">
+      <div class="banner-img">
+        <img
+          src="./assests/img/cheesecake_banner_removebg.png"
+          class="cheese-cake"
+          alt=""
+        />
+      </div>
+      <h1 class="banner-title">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;客
+        氣 可 就 吃 不 到 了 呢 ！
+        <br />
+        一 口 接 著 一 口 ， 勉 客 氣 啦 ！
+      </h1>
+      <div class="banner-img">
+        <img
+          src="./assests/img/fruitcake_banner_removebg.png"
+          class="fruit-cake"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <!-- news section  -->
+    <section class="index-news">
+      <p class="index-news-title">NEWS</p>
+      <div class="index-news-content">
+        <div class="arrow">
+          <a href=""><i class="fa-solid fa-angle-left"></i></a>
+        </div>
+        <div class="news-img">
+          <img src="./assests/img/news.jpg" alt="" />
+        </div>
+        <div class="news-text">
+          <p>勉keki開課啦！打造屬於你的專屬甜點</p>
+          <p>
+            嘿，你是不是也跟我們一樣，吃甜點不過癮還想自己動手做呢？來來來，這次我們不賣關子，直接開班教你如何做出甜到心坎裡的夢幻甜點！
+          </p>
+        </div>
+        <div class="news-rm-btn">
+          <button>READ MORE...</button>
+        </div>
+        <div class="arrow">
+          <a href=""><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section  -->
+    <section class="index-about">
+      <div class="index-about-wrapper">
+        <div class="about-img">
+          <img src="./assests/img/index-about.jpg" alt="" />
+        </div>
+
+        <div class="about-text">
+          <h3>ABOUT</h3>
+          <p>
+            我們相信每一塊蛋糕都是傳遞愛與關懷的最佳方式。我們的故事源於對烘焙的熱愛，以及對每一位顧客的深切關懷。從一個小小的甜點工作室開始，我們以最純粹的食材、最精湛的技藝，為每一位顧客帶來不僅僅是美味的享受，更是一份充滿溫暖與幸福的心意。
+          </p>
+          <div class="about-rm-btn">
+            <button>READ MORE...</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- products section  -->
+    <section class="index-products">
+      <div class="index-products-title"><h3>PRODUCTS</h3></div>
+      <div class="product-list-wrapper">
+        <div class="product-list">
+          <div class="product">
+            <img src="./assests/img/product_cheesecake.jpg" alt="" />
+            <p class="product-name">經典輕乳酪蛋糕</p>
+            <p class="price">450 NTD</p>
+          </div>
+          <div class="product">
+            <img src="./assests/img/product_fruitcake.jpg" alt="" />
+            <p class="product-name">水果戚風蛋糕</p>
+            <p class="price">600 NTD</p>
+          </div>
+          <div class="product">
+            <img src="./assests/img/product_mochacheesecake.jpg" alt="" />
+            <p class="product-name">宇治抹茶重乳酪蛋糕</p>
+            <p class="price">450 NTD</p>
+          </div>
+        </div>
+        <div class="product-list">
+          <div class="product">
+            <img src="./assests/img/product_milkrowcake.jpg" alt="" />
+            <p class="product-name">宇治抹茶生乳捲</p>
+            <p class="price">300 NTD</p>
+          </div>
+          <div class="product">
+            <img src="./assests/img/product_chocolatecheesecake.jpg" alt="" />
+            <p class="product-name">巧克力輕乳酪蛋糕</p>
+            <p class="price">450 NTD</p>
+          </div>
+          <div class="product">
+            <img src="./assests/img/product_almondcake.jpg" alt="" />
+            <p class="product-name">杏仁焦糖蛋糕</p>
+            <p class="price">100 NTD</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-top">
+        <img src="./assests/img/logo.svg" alt="" />
+        <div class="footer-info">
+          <p>
+            營業時間｜週一至週日 9:00-19:00<br />
+            電話｜(02)2712-0589<br />
+            信箱｜bian.kekiii@gmail.com<br />
+            地址｜104台北市中山區南京東路三段219號4F
+          </p>
+        </div>
+        <div class="footer-list">
+          <ul>
+            <li><a href="#" class="active">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./news.html">NEWS</a></li>
+            <li><a href="./products.html">PRODUCTS</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="footer-icon">
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-threads"></i></a>
+          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-bot">
+        <p>
+          本網站為緯育TibaMe前端工程師班第XX期學員專題作品，本平台僅供學習、展示之用
+          | 參考資源：<br />
+          緯育TibaMe前端工程師班第85期學員專題作品MAOSGOODY、不二家、桑澤和菓子、MERCER
+          bis、Palette 蛋糕製作所、畬室<br />© 勉Keki All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

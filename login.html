@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>會員登入</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <style>
+      /* login.html */
+      .login-content-wrapper {
+        display: flex;
+        height: 900px;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+      }
+
+      .login-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+      }
+
+      .login-content-title {
+        display: flex;
+        width: 734px;
+        height: 253px;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .login-content-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+      }
+
+      /* .login.html */
+      .login {
+        border-radius: 50px;
+        border: 1px solid #5b4722;
+      }
+
+      #account,
+      #password {
+        border-radius: var(--space-2, 8px);
+        border: 1px solid #cec8c8;
+        background: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-wrapper">
+        <img src="./assests/img/logo.svg" alt="" />
+        <nav>
+          <div class="nav-title">
+            <ul>
+              <li><a href="./index.html">HOME</a></li>
+              <li><a href="./about.html">ABOUT</a></li>
+              <li><a href="./news.html">NEWS</a></li>
+              <li><a href="./products.html">PRODUCTS</a></li>
+              <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+          <div class="nav-icon">
+            <ul>
+              <li>
+                <a href="#" class="active"
+                  ><img
+                    src="./assests/img/account.svg"
+                    class="account-icon"
+                    alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./assests/img/cart.svg" class="cart-icon" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="login-content-wrapper">
+      <div class="login">
+        <div class="login-content-title">
+          <img src="./assests/img/logo.svg" alt="" />
+          <h3>Login</h3>
+          <p>會員登入</p>
+        </div>
+        <div class="login-content-form">
+          <label for="account">帳號</label>
+          <input id="account" type="text" />
+          <label for="password">密碼</label>
+          <input id="password" type="password" />
+          <input id="remember-me" type="checkbox" />
+          <label for="remember-me">記住我</label>
+          <p style="display: inline-block">忘記密碼</p>
+          <button class="login">登入</button>
+
+          <div class="form-icon">
+            <div class="form-google">
+              <a href=""><i class="fa-brands fa-google"></i></a>
+            </div>
+            <div class="form-facebook">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+            <div class="form-line">
+              <a href=""><i class="fa-brands fa-line"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-top">
+        <img src="./assests/img/logo.svg" alt="" />
+        <div class="footer-info">
+          <p>
+            營業時間｜週一至週日 9:00-19:00<br />
+            電話｜(02)2712-0589<br />
+            信箱｜bian.kekiii@gmail.com<br />
+            地址｜104台北市中山區南京東路三段219號4F
+          </p>
+        </div>
+        <div class="footer-list">
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./news.html">NEWS</a></li>
+            <li><a href="./products.html">PRODUCTS</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="footer-icon">
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-threads"></i></a>
+          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-bot">
+        <p>
+          本網站為緯育TibaMe前端工程師班第XX期學員專題作品，本平台僅供學習、展示之用
+          | 參考資源：<br />
+          緯育TibaMe前端工程師班第85期學員專題作品MAOSGOODY、不二家、桑澤和菓子、MERCER
+          bis、Palette 蛋糕製作所、畬室<br />© 勉Keki All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
