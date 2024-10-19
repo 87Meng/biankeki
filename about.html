@@ -10,6 +10,58 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
   </head>
+  <style>
+    /* section 1 */
+    .banner-video {
+      width: 100%;
+      height: 750px;
+      overflow: hidden;
+    }
+
+    .banner-video video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+
+    /* section 2 */
+    .about-cake-wrapper {
+      width: 100%;
+      height: auto;
+    }
+
+    .about-cake {
+      width: 100%;
+      height: 910px;
+    }
+    .cheese-cake-q {
+      width: 650px;
+      height: auto;
+    }
+
+    .about-cake {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .about-title p,
+    .about-text p {
+      width: 613px;
+      font-size: 30px;
+      background-color: #fff;
+    }
+
+    .about-text {
+      position: absolute;
+    }
+
+    /* section 3 */
+    .about-videos {
+      width: 100%;
+      height: 2970px;
+    }
+  </style>
   <body>
     <header>
       <div class="header-wrapper">
@@ -44,6 +96,38 @@
         </nav>
       </div>
     </header>
+
+    <!-- section 1 -->
+    <section class="banner-video">
+      <video
+        autoplay
+        muted
+        src="./assests/video/banner.mp4"
+        type="video/mp4"
+      ></video>
+    </section>
+
+    <!-- section 2 -->
+    <section class="about-cake">
+      <div class="about-cake-wrapper">
+        <div class="about-title">
+          <p>關於 勉Keki</p>
+        </div>
+        <div class="about-content"></div>
+        <img
+          class="cheese-cake-q"
+          src="./assests/img/cheesecake_q.png"
+          alt=""
+        />
+        <div class="about-text">
+          <p>勉Keki，</p>
+          <p>名字來自閩南語「免客氣」。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 3 -->
+    <section class="about-videos"></section>
 
     <footer>
       <div class="footer-top">
