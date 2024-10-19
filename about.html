@@ -26,41 +26,141 @@
     }
 
     /* section 2 */
-    .about-cake-wrapper {
-      width: 100%;
-      height: auto;
-    }
-
-    .about-cake {
+    .about-making {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       width: 100%;
       height: 910px;
     }
+
+    .about-content {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      position: relative;
+    }
+
+    .cake-img-wrapper {
+      width: 100%;
+      height: auto;
+      padding-left: 155px;
+    }
+
     .cheese-cake-q {
-      width: 650px;
+      width: 65%;
       height: auto;
     }
 
-    .about-cake {
-      display: flex;
-      flex-direction: column;
+    .about-title {
+      margin: 50px 300px;
+    }
+
+    .about-title p {
+      text-align: center;
+      padding: 10px;
     }
 
     .about-title p,
-    .about-text p {
-      width: 613px;
+    .about-text1,
+    .about-text2 {
       font-size: 30px;
+      width: 613px;
+      font-size: 24px;
+      padding: 10px;
       background-color: #fff;
     }
 
     .about-text {
       position: absolute;
+      width: 450px;
+      padding: 10px;
+      right: 260px;
+      bottom: 10px;
     }
 
+    .about-text1 {
+      position: absolute;
+      width: 450px;
+      /* right: 260px; */
+      bottom: 65px;
+      z-index: 10;
+    }
+
+    .about-text2 {
+      position: absolute;
+      width: 450px;
+      left: 60px;
+      bottom: 10px;
+      z-index: 10;
+    }
     /* section 3 */
     .about-videos {
+      display: flex;
+      flex-direction: column;
       width: 100%;
       height: 2970px;
+      position: relative;
     }
+
+    .about-intro {
+      display: flex;
+      width: 500px;
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .about-intro h3 {
+      color: #5b4722;
+      font-size: 24px;
+      letter-spacing: 2.4px;
+    }
+
+    .about-intro p {
+      color: #5b4722;
+      font-size: 16px;
+      line-height: 40px;
+      letter-spacing: 2.4px;
+    }
+
+    .about-intro-wrapper1 {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      height: 600px;
+      padding: 100px;
+    }
+
+    .about-intro-wrapper2 {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 600px;
+      padding: 100px;
+    }
+
+    .about-intro-wrapper3 {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      height: 600px;
+      padding: 100px;
+    }
+
+    .about-intro1 {
+      display: flex;
+    }
+    .about-intro2 {
+      display: flex;
+    }
+    .about-intro3 {
+      display: flex;
+    }
+    /* 
+    .about-intro-video video {
+    } */
   </style>
   <body>
     <header>
@@ -102,32 +202,80 @@
       <video
         autoplay
         muted
+        loading="lazy"
         src="./assests/video/banner.mp4"
         type="video/mp4"
       ></video>
     </section>
 
     <!-- section 2 -->
-    <section class="about-cake">
-      <div class="about-cake-wrapper">
-        <div class="about-title">
-          <p>關於 勉Keki</p>
+    <section class="about-making">
+      <div class="about-title">
+        <p>關於 勉Keki</p>
+      </div>
+      <div class="about-content">
+        <div class="cake-img-wrapper">
+          <img
+            class="cheese-cake-q"
+            src="./assests/img/cheesecake_q.png"
+            alt=""
+          />
         </div>
-        <div class="about-content"></div>
-        <img
-          class="cheese-cake-q"
-          src="./assests/img/cheesecake_q.png"
-          alt=""
-        />
         <div class="about-text">
-          <p>勉Keki，</p>
-          <p>名字來自閩南語「免客氣」。</p>
+          <p class="about-text1">勉Keki，</p>
+          <p class="about-text2">名字來自閩南語「免客氣」。</p>
         </div>
       </div>
     </section>
 
     <!-- section 3 -->
-    <section class="about-videos"></section>
+    <section class="about-videos">
+      <div class="about-intro-wrapper1">
+        <div class="about-intro about-intro1">
+          <div class="about-intro-title">
+            <h3>關於 勉Keki</h3>
+          </div>
+          <div class="about-intro-text">
+            <p>
+              名字來自閩南語「免客氣」，象徵我們希望帶給大家最親切的招待，隨時歡迎來品嚐美味的甜點。同時，「勉keki」也和「賣蛋糕」發音相似，充滿趣味。我們每天手工製作各式甜點，嚴選在地新鮮食材，為您呈現家常的甜蜜滋味。不論是過節的蛋糕還是下午茶的點心，都希望每一口都讓您感受到我們用心的烘焙，像是鄰居間無需多言的溫暖情感。
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="about-intro-video">
+        <!-- <video src="./assests/video/sieve.mp4"></video> -->
+      </div>
+      <div class="about-intro-wrapper2">
+        <div class="about-intro about-intro2">
+          <div class="about-intro-title">
+            <h3>來自 勉Keki 的堅持</h3>
+          </div>
+          <div class="about-intro-text">
+            <p>
+              每一份甜點的背後，都蘊藏著我們對品質與細節的追求。在勉Keki，我們相信，只有用心挑選的食材、精細的手工製作，才能傳遞出甜點的靈魂。我們嚴選最天然、無負擔的食材，確保每一口都是健康與美味的平衡。而從原料到成品，我們不斷精進製作工藝，力求完美，這是我們對美食的執著，更是我們對每位顧客的承諾。我們堅信，真正的美味，來自於對每一個步驟的細心呵護，這也是我們持續前進的動力。
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="about-intro-video">
+        <!-- <video src="./assests/video/stir.mp4"></video> -->
+      </div>
+      <div class="about-intro-wrapper3">
+        <div class="about-intro about-intro3">
+          <div class="about-intro-title">
+            <h3>關於 勉Keki</h3>
+          </div>
+          <div class="about-intro-text">
+            <p>
+              名字來自閩南語「免客氣」，象徵我們希望帶給大家最親切的招待，隨時歡迎來品嚐美味的甜點。同時，「勉keki」也和「賣蛋糕」發音相似，充滿趣味。我們每天手工製作各式甜點，嚴選在地新鮮食材，為您呈現家常的甜蜜滋味。不論是過節的蛋糕還是下午茶的點心，都希望每一口都讓您感受到我們用心的烘焙，像是鄰居間無需多言的溫暖情感。
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="about-intro-video">
+        <!-- <video src="./assests/video/make.mp4"></video> -->
+      </div>
+    </section>
 
     <footer>
       <div class="footer-top">

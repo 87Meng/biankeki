@@ -3,10 +3,13 @@
   src: url("../assests/font/jf-openhuninn-2.1.ttf") format("truetype");
 }
 
+body {
+  background-color: #fff9db;
+}
 * {
   margin: 0;
   padding: 0;
-  background-color: #fff9db;
+
   font-family: "Open Huninn";
   box-sizing: border-box;
 }
@@ -21,6 +24,7 @@ header {
   width: 100%;
   height: 100px;
   padding: 10px 20px;
+  background-color: #fff9db;
   margin: auto;
   position: fixed;
   left: 0px;
@@ -87,7 +91,7 @@ nav ul li {
   background-color: #fff9db;
   opacity: 0.95;
   border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
 nav ul li:hover .dropdown {
