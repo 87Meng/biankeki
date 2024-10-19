@@ -9,6 +9,161 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+    <style>
+      /* section 1  */
+      .news-banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        width: 100%;
+        height: 500px;
+        background: url("./assests/img/banner.jpg") lightgray 50% / cover
+          no-repeat;
+      }
+
+      .banner-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        gap: 100px;
+      }
+
+      .banner-logo {
+        width: 228px;
+        height: auto;
+      }
+
+      .banner-logo img {
+        width: 100%;
+      }
+
+      .banner-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+      }
+
+      .banner-text h3 {
+        font-size: 50px;
+      }
+
+      .banner-text p {
+        font-size: 20px;
+      }
+      /* section 2  */
+      .news-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+      }
+
+      .news-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 350px;
+        padding: 16px 50px;
+        border-bottom: 1px solid rgb(91, 71, 34, 0.4);
+      }
+
+      .news-content {
+        height: auto;
+        display: flex;
+        align-items: center;
+        gap: 100px;
+      }
+
+      .news-img-container {
+        width: 380px;
+        height: auto;
+      }
+      .news-img-container img {
+        width: 100%;
+      }
+
+      .news-text {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 90px;
+      }
+
+      .news-text p {
+        width: 318px;
+      }
+
+      .news-date {
+        text-decoration: underline;
+      }
+
+      .paragraph-btn {
+        display: flex;
+        gap: 130px;
+      }
+
+      .news-paragraph {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 45px;
+        position: relative;
+        bottom: 30px;
+        color: #5b4722;
+        line-height: 25px;
+      }
+
+      .news-rm-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 200px;
+      }
+
+      .news-title {
+        font-weight: 600;
+      }
+
+      .classification p {
+        border: 1px solid #5b4722;
+        padding: 5px;
+        border-radius: 8px;
+        font-size: 12px;
+      }
+
+      .rm-btn {
+        border-radius: 10px;
+        background: var(--btn-color, #de7134);
+        border: none;
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        width: 160px;
+        height: auto;
+        padding: 10px 0px;
+      }
+
+      .page {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 30px;
+      }
+
+      .page-btn {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: #fff9db;
+        border: 1px solid #5b4722;
+        color: #5b4722;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -44,6 +199,129 @@
         </nav>
       </div>
     </header>
+
+    <!-- section 1 -->
+    <section class="news-banner">
+      <div class="banner-title">
+        <div class="banner-logo">
+          <img src="./assests/img/logo.svg" alt="" />
+        </div>
+        <div class="banner-text">
+          <h3>NEWS</h3>
+          <p>最新消息</p>
+        </div>
+      </div>
+    </section>
+    <!-- section 2 -->
+    <section class="news-wrapper">
+      <div class="news-container">
+        <div class="news-content">
+          <div class="news-img-container">
+            <img src="./assests/img/news_1.jpg" alt="" />
+          </div>
+          <div class="paragraph-btn">
+            <div class="news-text">
+              <p class="news-date">2024/09/19</p>
+              <div class="news-paragraph">
+                <p class="news-title">
+                  「勉keki 開課啦！」打造屬於你的專屬甜點
+                </p>
+                <p>
+                  嘿，你是不是也跟我們一樣，吃甜點不過癮還想自己動手做呢？來來來，這次我們不賣關子，直接開班教你如何做出甜到心坎裡的...
+                </p>
+              </div>
+            </div>
+            <div class="news-rm-btn">
+              <div class="classification">
+                <p>消息報報</p>
+              </div>
+              <button class="rm-btn">READ MORE...</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news-container">
+        <div class="news-content">
+          <div class="news-img-container">
+            <img src="./assests/img/news_2.jpg" alt="" />
+          </div>
+          <div class="paragraph-btn">
+            <div class="news-text">
+              <p class="news-date">2024/08/22</p>
+              <div class="news-paragraph">
+                <p class="news-title">2024舊物盛典－出市確定！</p>
+                <p>
+                  勉keki
+                  的首次出攤就在舊物盛典！屆時將準備各式各樣的甜點，特別是我們的經典乳酪蛋糕和限定口味生乳捲﹐還有限量周邊，一...
+                </p>
+              </div>
+            </div>
+            <div class="news-rm-btn">
+              <div class="classification">
+                <p>消息報報</p>
+              </div>
+              <button class="rm-btn">READ MORE...</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news-container">
+        <div class="news-content">
+          <div class="news-img-container">
+            <img src="./assests/img/news_3.jpg" alt="" />
+          </div>
+          <div class="paragraph-btn">
+            <div class="news-text">
+              <p class="news-date">2024/07/13</p>
+              <div class="news-paragraph">
+                <p class="news-title">
+                  勉keki 榮獲網友票選2024年度全台必吃甜點品牌
+                </p>
+                <p>
+                  感謝各位愛吃 keki 的朋友支持！勉keki
+                  榮獲網路票選2024年度全台必吃甜點品牌第二名！！為了感謝各位厚愛，經典系列商品全...
+                </p>
+              </div>
+            </div>
+            <div class="news-rm-btn">
+              <div class="classification">
+                <p>消息報報</p>
+              </div>
+              <button class="rm-btn">READ MORE...</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news-container">
+        <div class="news-content">
+          <div class="news-img-container">
+            <img src="./assests/img/news_4.jpg" alt="" />
+          </div>
+          <div class="paragraph-btn">
+            <div class="news-text">
+              <p class="news-date">2024/06/03</p>
+              <div class="news-paragraph">
+                <p class="news-title">新品上市－綜合水果乳酪蛋糕</p>
+                <p>
+                  初夏水果風味鉅獻！乳酪的細膩口感與芒果、草莓的清爽酸甜，在每一口中交織出獨特的風味，讓人欲罷不能！商品詳情請點選...
+                </p>
+              </div>
+            </div>
+            <div class="news-rm-btn">
+              <div class="classification">
+                <p>消息報報</p>
+              </div>
+              <button class="rm-btn">READ MORE...</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page">
+        <button class="page-btn">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+      </div>
+    </section>
 
     <footer>
       <div class="footer-top">
