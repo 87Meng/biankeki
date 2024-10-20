@@ -12,7 +12,7 @@
   </head>
   <style>
     /* section 1  */
-    .news-banner {
+    .bg-banner {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -55,6 +55,133 @@
     .banner-text p {
       font-size: 20px;
     }
+
+    /* section 2 */
+    .contact-info {
+      display: flex;
+      width: 100%;
+      padding: 67px 200px;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+    }
+
+    .contact-info-text-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact-info-text-wrapper p {
+      color: #5b4722;
+    }
+
+    /* section 3 */
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 900px;
+      padding: 50px;
+      gap: 50px;
+    }
+    .form-title {
+      font-size: 22px;
+      color: #5b4722;
+    }
+
+    form {
+      border-radius: 30px;
+      background: #f8e688;
+      width: 500px;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .form-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .form-content-line {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: 50px;
+    }
+
+    input,
+    #contact-time {
+      display: flex;
+      width: 243px;
+      height: 39px;
+      padding: 10px;
+      align-items: center;
+      gap: 10px;
+      font-size: 12px;
+      border-radius: 8px;
+      border: 1px solid #cec8c8;
+      background: #fff;
+    }
+
+    #contact-time {
+      color: #cec8c8;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #cec8c8;
+    }
+
+    input:focus,
+    textarea:focus {
+      border: 1.5px solid #5b4722;
+      outline: none;
+    }
+
+    label {
+      width: 70px;
+      color: #5b4722;
+    }
+
+    .text-area {
+      align-items: flex-start;
+    }
+
+    .text-area label {
+      margin-top: 10px;
+    }
+
+    textarea {
+      padding: 10px;
+      font-size: 12px;
+      border-radius: 8px;
+      border: 1px solid #cec8c8;
+    }
+
+    button {
+      display: flex;
+      width: 159px;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      background-color: #f8e688;
+      border-radius: 7px;
+      border: 1px solid #5b4722;
+      color: #5b4722;
+    }
+
+    button:hover {
+      color: white;
+      background-color: #5b4722;
+    }
   </style>
   <body>
     <header>
@@ -91,7 +218,7 @@
       </div>
     </header>
     <!-- section 1 -->
-    <section class="news-banner">
+    <section class="bg-banner">
       <div class="banner-title">
         <div class="banner-logo">
           <img src="./assests/img/logo.svg" alt="" />
@@ -102,6 +229,74 @@
         </div>
       </div>
     </section>
+
+    <!-- section 2 -->
+    <section class="contact-info">
+      <div class="contact-info-text-wrapper">
+        <p>營業時間｜週一至週日 9:00-19:00</p>
+        <p>電話｜(02)2712-0589</p>
+        <p>信箱｜bian.kekiii@gmail.com</p>
+        <p>地址｜104台北市中山區南京東路三段219號4F</p>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4678298702884!2d121.54325290000001!3d25.052128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abddfb12794f%3A0x71c40951a2fc40fe!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuInmrrUyMTnomZ8!5e0!3m2!1szh-TW!2stw!4v1729428818718!5m2!1szh-TW!2stw"
+        style="border: 0"
+        width="350"
+        height="300"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <!-- section 3 -->
+    <section class="contact-form">
+      <div class="form-title">
+        &nbsp;&nbsp;&nbsp;&nbsp;請留下相關問題及資料，<br />我們將儘快與您聯絡，謝謝！
+      </div>
+      <form action="">
+        <div class="form-content">
+          <div class="form-content-line">
+            <label for="name">姓名</label>
+            <input type="text" id="name" placeholder="請輸入姓名" />
+          </div>
+          <div class="form-content-line">
+            <label for="phone-number">電話</label>
+            <input type="text" id="phone-number" placeholder="請輸入電話號碼" />
+          </div>
+          <div class="form-content-line">
+            <label for="email">電子信箱</label>
+            <input type="email" id="email" placeholder="請輸入電子信箱" />
+          </div>
+          <div class="form-content-line">
+            <label for="company-name">公司名稱</label>
+            <input type="text" id="company-name" placeholder="請輸入公司名稱" />
+          </div>
+          <div class="form-content-line">
+            <label for="contact-time">聯繫時段</label>
+            <select id="contact-time" required>
+              <option disabled selected>請輸入您方便的聯繫時段</option>
+              <option>上午時段：09:00-12:00</option>
+              <option>下午時段：12:00-16:00</option>
+              <option>晚間時段：16:00-19:00</option>
+              <option>全日皆可：09:00-19:00</option>
+            </select>
+          </div>
+          <div class="form-content-line text-area">
+            <label for="contact-content">聯繫內容</label>
+            <textarea
+              name="message"
+              rows="10"
+              cols="31"
+              placeholder="請輸入您的想法或問題"
+            ></textarea>
+          </div>
+        </div>
+
+        <button type="submit">確認送出</button>
+      </form>
+    </section>
+
     <footer>
       <div class="footer-top">
         <img src="./assests/img/logo.svg" alt="" />
