@@ -24,12 +24,17 @@
       display: flex;
       width: 100%;
       height: auto;
-      gap: 50px;
+      justify-content: space-evenly;
     }
     .cake-rmbg-img-container {
-      width: 300px;
+      width: 250px;
       height: 150px;
       position: relative;
+      /* border: 1px red solid; */
+    }
+
+    .cake-rmbg-img-container:hover {
+      transform: rotate(5deg);
     }
     .cake-rmbg-img {
       width: 100%;
@@ -48,7 +53,85 @@
       left: 30px;
     }
 
+    /* banner animation */
+
+    /* .cake-rmbg-img-container {
+      animation: slider 1s ease-in 0s;
+    }
+
+    @keyframes slider {
+      0% {
+      }
+      100% {
+      }
+    } */
+
     /* section 2 */
+
+    .all-products {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 1700px;
+      padding: 10px 96px;
+      gap: 77px;
+      color: #5b4722;
+    }
+
+    .product-list-title {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .product-list-title h3 {
+      font-size: 26px;
+    }
+
+    .filter-btn button {
+      border-radius: 30px;
+      border: 1px solid #5b4722;
+      color: #5b4722;
+      background: #fff;
+      padding: 10px 20px;
+    }
+
+    .filter-btn button:hover {
+      color: #fff;
+      background: #5b4722;
+    }
+
+    .product-list-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+    }
+    .product-list-line {
+      display: flex;
+      width: 100%;
+      gap: 115px;
+    }
+
+    .product-item {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .product-item-img {
+      width: 280px;
+      height: 330px;
+    }
+
+    .product-item-img img {
+      width: 100%;
+      height: 100%;
+    }
+    .product-item-text {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
   </style>
   <body>
     <header>
@@ -128,11 +211,103 @@
 
     <!-- section 2  -->
     <section class="all-products">
-      <div>
-        <div>
-          <div></div>
-          <div></div>
-          <div></div>
+      <div class="product-list-title">
+        <h3>SWEETS LIST</h3>
+        <p>商品一覽</p>
+        <div class="filter-btn">
+          <button>+類別</button>
+          <button>+類別</button>
+          <button>+類別</button>
+          <button>+類別</button>
+        </div>
+      </div>
+      <div class="product-list-wrapper">
+        <div class="product-list-line">
+          <div class="product-item">
+            <div class="product-item-img">
+              <img src="" alt="" />
+            </div>
+            <div class="product-item-text">
+              <p>輕乳酪蛋糕</p>
+              <p>250 NTD</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-item-img">
+              <img src="" alt="" />
+            </div>
+            <div class="product-item-text">
+              <p>輕乳酪蛋糕</p>
+              <p>250 NTD</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-item-img">
+              <img src="" alt="" />
+            </div>
+            <div class="product-item-text">
+              <p>輕乳酪蛋糕</p>
+              <p>250 NTD</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-line">
+          <div class="product-item">
+            <div class="product-item-img">
+              <img src="" alt="" />
+            </div>
+            <div class="product-item-text">
+              <p>輕乳酪蛋糕</p>
+              <p>250 NTD</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-item-img">
+              <img src="" alt="" />
+            </div>
+            <div class="product-item-text">
+              <p>輕乳酪蛋糕</p>
+              <p>250 NTD</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-item-img">
+              <img src="" alt="" />
+            </div>
+            <div class="product-item-text">
+              <p>輕乳酪蛋糕</p>
+              <p>250 NTD</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-list-line">
+          <div class="product-item">
+            <div class="product-item-img">
+              <img src="" alt="" />
+            </div>
+            <div class="product-item-text">
+              <p>輕乳酪蛋糕</p>
+              <p>250 NTD</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-item-img">
+              <img src="" alt="" />
+            </div>
+            <div class="product-item-text">
+              <p>輕乳酪蛋糕</p>
+              <p>250 NTD</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-item-img">
+              <img src="" alt="" />
+            </div>
+            <div class="product-item-text">
+              <p>輕乳酪蛋糕</p>
+              <p>250 NTD</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
