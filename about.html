@@ -158,9 +158,31 @@
     .about-intro3 {
       display: flex;
     }
-    /* 
-    .about-intro-video video {
-    } */
+
+    .sieve {
+      position: absolute;
+      right: 6px;
+      top: 476px;
+      z-index: -1;
+    }
+
+    .stir {
+      position: absolute;
+      bottom: 1400px;
+      z-index: -1;
+    }
+
+    .sieve video,
+    .stir video,
+    .make video {
+      border-radius: 50%;
+    }
+    .make {
+      position: absolute;
+      right: 249px;
+      bottom: 64px;
+      z-index: -1;
+    }
   </style>
   <body>
     <header>
@@ -243,9 +265,14 @@
           </div>
         </div>
       </div>
-      <div class="about-intro-video">
-        <!-- <video src="./assests/video/sieve.mp4"></video> -->
-      </div>
+      <canvas class="mask-video sieve">
+        <video
+          src="./assests/video/sieve.mp4"
+          width="100%"
+          height="auto"
+          autoplay
+        ></video>
+      </canvas>
       <div class="about-intro-wrapper2">
         <div class="about-intro about-intro2">
           <div class="about-intro-title">
@@ -258,24 +285,35 @@
           </div>
         </div>
       </div>
-      <div class="about-intro-video">
-        <!-- <video src="./assests/video/stir.mp4"></video> -->
-      </div>
+      <canvas class="mask-video stir">
+        <video
+          src="./assests/video/stir.mp4"
+          width="700"
+          height="auto"
+          autoplay
+        ></video>
+      </canvas>
       <div class="about-intro-wrapper3">
         <div class="about-intro about-intro3">
           <div class="about-intro-title">
-            <h3>關於 勉Keki</h3>
+            <h3>品牌總監 Sheng Hao</h3>
           </div>
           <div class="about-intro-text">
             <p>
-              名字來自閩南語「免客氣」，象徵我們希望帶給大家最親切的招待，隨時歡迎來品嚐美味的甜點。同時，「勉keki」也和「賣蛋糕」發音相似，充滿趣味。我們每天手工製作各式甜點，嚴選在地新鮮食材，為您呈現家常的甜蜜滋味。不論是過節的蛋糕還是下午茶的點心，都希望每一口都讓您感受到我們用心的烘焙，像是鄰居間無需多言的溫暖情感。
+              Sheng Hao 畢業於法國著名的 Ecole
+              LENOTRE，專修甜點製作，並深入研究各種經典與創新的糕點製作，將對甜點的熱愛與對創意的追求融入每一塊蛋糕中。他相信每一個甜點不僅僅是食物，更是一種情感的表達和生活的藝術。
             </p>
           </div>
         </div>
       </div>
-      <div class="about-intro-video">
-        <!-- <video src="./assests/video/make.mp4"></video> -->
-      </div>
+      <canvas class="mask-video make">
+        <video
+          src="./assests/video/make.mp4"
+          width="700"
+          height="auto"
+          autoplay
+        ></video>
+      </canvas>
     </section>
 
     <footer>

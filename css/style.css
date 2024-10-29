@@ -199,6 +199,18 @@ footer a:visited {
   gap: 64px;
 }
 
+.fa-instagram,
+.fa-threads,
+.fa-facebook-f {
+  font-size: 24 px;
+}
+
+.fa-instagram:hover,
+.fa-threads:hover,
+.fa-facebook-f:hover {
+  color: #5b4722;
+}
+
 .footer-bot {
   display: flex;
   height: 115px;
