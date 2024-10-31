@@ -130,7 +130,8 @@
 
       .classification p {
         border: 1px solid #5b4722;
-        padding: 5px;
+        background-color: white;
+        padding: 7px;
         border-radius: 8px;
         font-size: 12px;
       }
@@ -142,7 +143,7 @@
         color: #fff;
         font-size: 14px;
         text-align: center;
-        width: 160px;
+        width: 150px;
         height: auto;
         padding: 10px 0px;
       }
@@ -163,9 +164,15 @@
         width: 36px;
         height: 36px;
         border-radius: 50%;
+        font-weight: 600;
         background-color: #fff9db;
-        border: 1px solid #5b4722;
+        border: 1.5px solid #5b4722;
         color: #5b4722;
+      }
+
+      .page-btn:hover {
+        background-color: #5b4722;
+        color: white;
       }
     </style>
   </head>
@@ -178,8 +185,17 @@
             <ul>
               <li><a href="./index.html">HOME</a></li>
               <li><a href="./about.html">ABOUT</a></li>
-              <li><a href="#" class="active">NEWS</a></li>
-              <li><a href="./products.html">PRODUCTS</a></li>
+              <li><a href="#">NEWS</a></li>
+              <li>
+                <a href="./products.html">PRODUCTS</a>
+                <ul class="dropdown">
+                  <li><a href="#">乳酪蛋糕</a></li>
+                  <li><a href="#">生乳捲</a></li>
+                  <li><a href="#">生日蛋糕</a></li>
+                  <li><a href="#">小點</a></li>
+                </ul>
+              </li>
+
               <li><a href="./contact.html">CONTACT</a></li>
             </ul>
           </div>
@@ -237,7 +253,7 @@
             </div>
             <div class="news-rm-btn">
               <div class="classification">
-                <p>消息報報</p>
+                <p>課程通知</p>
               </div>
               <button class="rm-btn">READ MORE...</button>
             </div>
@@ -279,7 +295,8 @@
               <p class="news-date">2024/07/13</p>
               <div class="news-paragraph">
                 <p class="news-title">
-                  勉keki 榮獲網友票選2024年度全台必吃甜點品牌
+                  勉keki 榮獲網友票選－
+                  <br />★ 2024年度全台必吃甜點品牌 ★
                 </p>
                 <p>
                   感謝各位愛吃 keki 的朋友支持！勉keki
@@ -313,7 +330,7 @@
             </div>
             <div class="news-rm-btn">
               <div class="classification">
-                <p>消息報報</p>
+                <p>新品上市</p>
               </div>
               <button class="rm-btn">READ MORE...</button>
             </div>
@@ -342,7 +359,7 @@
           <ul>
             <li><a href="./index.html">HOME</a></li>
             <li><a href="./about.html">ABOUT</a></li>
-            <li><a href="#" class="active">NEWS</a></li>
+            <li><a href="#">NEWS</a></li>
             <li><a href="./products.html">PRODUCTS</a></li>
             <li><a href="./contact.html">CONTACT</a></li>
           </ul>

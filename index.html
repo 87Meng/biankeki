@@ -5,17 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>勉Keki</title>
     <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+
+    <!-- intro animation -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="./js/app.js"></script>
+
+    <!-- news slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+      integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+      integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./js/introAnimation.js"></script>
+    <script src="./slider.js"></script>
   </head>
   <style>
     /* intro animation */
@@ -83,12 +105,13 @@
     }
 
     /* section 2  */
+
     .index-news {
       display: flex;
       width: 100%;
       height: 400px;
       flex-direction: column;
-      justify-content: center;
+      /* justify-content: center; */
       align-items: center;
       margin-top: 150px;
     }
@@ -98,20 +121,22 @@
       width: 100%;
       height: auto;
       text-align: center;
-      font-size: 24px;
-      margin-bottom: 35px;
+      font-size: 30px;
+      padding: 10px;
       font-weight: bold;
     }
 
-    .index-news-content {
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
       width: 100%;
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 80px;
-    }
-
-    .arrow {
-      margin: 0px 30px;
     }
 
     .news-img {
@@ -130,6 +155,10 @@
       justify-content: center;
       gap: 50px;
       width: 450px;
+    }
+
+    .text-title {
+      font-weight: 600;
     }
 
     .news-text p {
@@ -154,9 +183,22 @@
       color: #fff;
       font-size: 14px;
       text-align: center;
-      width: 160px;
+      width: 150px;
       height: auto;
       padding: 10px 0px;
+      cursor: pointer;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #5b4722;
+      width: 20px;
+      height: 40px;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      font-size: 24px;
     }
     /* section 3  */
     .index-about {
@@ -288,7 +330,7 @@
         <nav>
           <div class="nav-title">
             <ul>
-              <li><a href="#" class="active">HOME</a></li>
+              <li><a href="#">HOME</a></li>
               <li><a href="./about.html">ABOUT</a></li>
               <li><a href="./news.html">NEWS</a></li>
               <li>
@@ -350,27 +392,75 @@
     </section>
 
     <!-- news section  -->
+
     <section class="index-news">
       <p class="index-news-title">NEWS</p>
-      <div class="index-news-content">
-        <div class="arrow">
-          <a href=""><i class="fa-solid fa-angle-left"></i></a>
+      <div class="swiper" navigation="true">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="news-img">
+              <img src="./assests/img/news_1.jpg" alt="" />
+            </div>
+            <div class="news-text">
+              <p class="text-title">勉keki開課啦！打造屬於你的專屬甜點</p>
+              <p>
+                嘿，你是不是也跟我們一樣，吃甜點不過癮還想自己動手做呢？來來來，這次我們不賣關子，直接開班教你如何做出甜到心坎裡的夢幻甜點！
+              </p>
+            </div>
+            <div class="news-rm-btn">
+              <button>READ MORE...</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news-img">
+              <img src="./assests/img/news_2.jpg" alt="" />
+            </div>
+            <div class="news-text">
+              <p class="text-title">2024舊物盛典－出市確定！</p>
+              <p>
+                勉keki
+                的首次出攤就在舊物盛典！屆時將準備各式各樣的甜點，特別是我們的經典乳酪蛋糕和限定口味生乳捲﹐還有限量周邊，一切都是為了讓每位甜點愛好者能夠享受最美好的味覺體驗！
+              </p>
+            </div>
+            <div class="news-rm-btn">
+              <button>READ MORE...</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news-img">
+              <img src="./assests/img/news_3.jpg" alt="" />
+            </div>
+            <div class="news-text">
+              <p class="text-title">
+                勉keki 榮獲網友票選－ <br />★ 2024年度全台必吃甜點品牌 ★
+              </p>
+              <p>
+                感謝各位愛吃 keki 的朋友支持！勉keki
+                榮獲網路票選2024年度全台必吃甜點品牌第二名！！為了感謝各位厚愛，經典系列商品全系列將於下週推出限時優惠，讓大家能以更甜甜的價格品嚐我們的經典美味！
+              </p>
+            </div>
+            <div class="news-rm-btn">
+              <button>READ MORE...</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="news-img">
+              <img src="./assests/img/news_4.jpg" alt="" />
+            </div>
+            <div class="news-text">
+              <p class="text-title">新品上市－綜合水果乳酪蛋糕</p>
+              <p>
+                初夏水果風味鉅獻！乳酪的細膩口感與芒果、草莓的清爽酸甜，在每一口中交織出獨特的風味，讓人欲罷不能！商品詳情請點選下方連結，立即體驗這份夏日的甜蜜誘惑！
+              </p>
+            </div>
+
+            <div class="news-rm-btn">
+              <button>READ MORE...</button>
+            </div>
+          </div>
         </div>
-        <div class="news-img">
-          <img src="./assests/img/news_1.jpg" alt="" />
-        </div>
-        <div class="news-text">
-          <p>勉keki開課啦！打造屬於你的專屬甜點</p>
-          <p>
-            嘿，你是不是也跟我們一樣，吃甜點不過癮還想自己動手做呢？來來來，這次我們不賣關子，直接開班教你如何做出甜到心坎裡的夢幻甜點！
-          </p>
-        </div>
-        <div class="news-rm-btn">
-          <button>READ MORE...</button>
-        </div>
-        <div class="arrow">
-          <a href=""><i class="fa-solid fa-angle-right"></i></a>
-        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </section>
 
@@ -447,7 +537,7 @@
         </div>
         <div class="footer-list">
           <ul>
-            <li><a href="#" class="active">HOME</a></li>
+            <li><a href="#">HOME</a></li>
             <li><a href="./about.html">ABOUT</a></li>
             <li><a href="./news.html">NEWS</a></li>
             <li><a href="./products.html">PRODUCTS</a></li>
