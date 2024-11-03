@@ -37,7 +37,7 @@
     ></script>
 
     <script src="./js/introAnimation.js"></script>
-    <script src="./slider.js"></script>
+    <script src="./js/slider.js"></script>
   </head>
   <style>
     /* intro animation */
@@ -109,11 +109,12 @@
     .index-news {
       display: flex;
       width: 100%;
-      height: 400px;
+      height: auto;
       flex-direction: column;
       /* justify-content: center; */
       align-items: center;
       margin-top: 150px;
+      gap: 100px;
     }
 
     .index-news-title {
@@ -124,6 +125,11 @@
       font-size: 30px;
       padding: 10px;
       font-weight: bold;
+      border: #5b4722;
+      background: white;
+      width: 300px;
+      padding: 15px 20px;
+      border-radius: 40px;
     }
 
     .swiper {
@@ -203,9 +209,11 @@
     /* section 3  */
     .index-about {
       display: flex;
+      align-items: center;
       width: 100%;
       height: 750px;
-      padding: 112px 90px;
+      padding: 100px 90px;
+      margin: 80px 0px;
     }
 
     .index-about-wrapper {
@@ -242,28 +250,27 @@
     .about-text h3 {
       color: #5b4722;
       font-size: 30px;
+      background: white;
+      width: 300px;
+      padding: 15px 20px;
+      border-radius: 40px;
+      text-align: center;
     }
 
     .about-text p {
       color: #5b4722;
       font-size: 18px;
       font-style: normal;
-      line-height: 40px; /* 208.333% */
+      line-height: 35px;
       letter-spacing: 2px;
     }
 
-    .about-rm-btn {
-      display: flex;
-      width: 100%;
-      justify-content: flex-end;
-      padding: 10px 0px;
-    }
     /* section 4  */
 
     .index-products {
       display: flex;
       width: 100%;
-      height: 950px;
+      height: auto;
       padding: 50px 60px;
       flex-direction: column;
       gap: 77px;
@@ -276,6 +283,11 @@
     .index-products-title h3 {
       color: #5b4722;
       font-size: 30px;
+      background: white;
+      width: 300px;
+      padding: 15px 20px;
+      border-radius: 40px;
+      text-align: center;
     }
 
     .product-list-wrapper {
@@ -319,6 +331,23 @@
   <body>
     <!-- intro animation -->
     <section class="intro-animation">
+      <svg width="400" height="400" viewBox="-100 -100 200 200">
+        <defs>
+          <path id="text-arc" d="M 0, 50 A 50 50 0 1 1 1,50" />
+        </defs>
+
+        <text
+          fill="#de7134"
+          font-family="Open Huninn"
+          font-size="12px"
+          font-weight="bold"
+          letter-spacing="2px"
+        >
+          <textPath href="#text-arc">
+            一口接著一口，勉客氣啦！客氣可就吃不到了呢！
+          </textPath>
+        </text>
+      </svg>
       <div class="hero">
         <img src="./assests/img/logo.svg" alt="" />
       </div>
@@ -336,10 +365,10 @@
               <li>
                 <a href="./products.html">PRODUCTS</a>
                 <ul class="dropdown">
-                  <li><a href="#">乳酪蛋糕</a></li>
+                  <li><a href="./product_page.html">乳酪蛋糕</a></li>
                   <li><a href="#">生乳捲</a></li>
                   <li><a href="#">生日蛋糕</a></li>
-                  <li><a href="#">小點</a></li>
+                  <li><a href="#">其他小點</a></li>
                 </ul>
               </li>
 
@@ -476,9 +505,9 @@
           <p>
             我們相信每一塊蛋糕都是傳遞愛與關懷的最佳方式。我們的故事源於對烘焙的熱愛，以及對每一位顧客的深切關懷。從一個小小的甜點工作室開始，我們以最純粹的食材、最精湛的技藝，為每一位顧客帶來不僅僅是美味的享受，更是一份充滿溫暖與幸福的心意。
           </p>
-          <div class="about-rm-btn">
-            <button>READ MORE...</button>
-          </div>
+          <p>
+            每一份甜點的背後，都蘊藏著我們對品質與細節的追求。我們相信只有用心挑選的食材、精細的手工製作，才能傳遞出甜點的靈魂。我們嚴選最天然、無負擔的食材，確保每一口都是健康與美味的平衡。而從原料到成品，我們不斷精進製作工藝，力求完美，這是我們對美食的執著，更是我們對每位顧客的承諾。我們堅信，真正的美味，來自於對每一個步驟的細心呵護，這也是我們持續前進的動力。
+          </p>
         </div>
       </div>
     </section>

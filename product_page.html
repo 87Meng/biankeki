@@ -9,7 +9,287 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+
+    <style>
+      /* section 1 */
+      .pagination-banner {
+        width: 100%;
+        height: 750px;
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        position: relative;
+      }
+
+      .banner-img-wrapper {
+        width: 1000px;
+        height: 500px;
+      }
+
+      .banner-img-wrapper img {
+        width: 100%;
+        height: auto;
+        border-radius: 300px;
+      }
+
+      .pagination-banner h3 {
+        color: #5b4722;
+        writing-mode: vertical-rl;
+        line-height: 3.5;
+        letter-spacing: 5px;
+        font-size: 40px;
+        font-weight: 500;
+        position: absolute;
+        left: 135px;
+      }
+
+      /* section 2 */
+      .pagination-ingredient {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 800px;
+        padding: 150px;
+        gap: 150px;
+      }
+
+      .pagination-ingredient p {
+        color: #5b4722;
+        font-size: 20px;
+        letter-spacing: 2.2px;
+        line-height: 35px;
+        padding: 0px 80px;
+      }
+
+      .ingredient-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+      }
+
+      .ingredient-item {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .ingredient-img-container {
+        width: 230px;
+        height: 230px;
+      }
+
+      .ingredient-img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      .eggs {
+        object-position: 25% 75%;
+      }
+
+      .milk {
+        object-position: 20% 50%;
+      }
+
+      .ingredient-item p {
+        text-align: center;
+        background-color: #fff;
+        border-radius: 40px;
+        padding: 10px;
+        font-size: 18px;
+      }
+
+      /* section 3 */
+      .pagination-productInfo {
+        width: 100%;
+        height: 800px;
+        display: flex;
+        align-items: center;
+        gap: 70px;
+      }
+
+      .intro-wrapper {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+      }
+
+      .intro-img {
+        display: flex;
+        gap: 20px;
+      }
+
+      .product-other {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .product-other-img-wrapper {
+        width: 100px;
+        height: 100px;
+      }
+
+      .product-other-img-wrapper img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+
+      .product-main {
+        width: 500px;
+        height: 400px;
+      }
+
+      .product-main img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+
+      .productIntro {
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        gap: 30px;
+      }
+      .productIntro h3 {
+        font-size: 28px;
+        color: #5b4722;
+      }
+
+      .productIntro p {
+        color: #5b4722;
+        letter-spacing: 1px;
+        line-height: 25px;
+      }
+
+      .product-info-content {
+        font-size: 16px;
+        border-bottom: 1px solid rgb(91, 71, 34, 0.4);
+        padding-bottom: 30px;
+      }
+
+      .info-price {
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      .amount {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 200px;
+        padding-top: 20px;
+      }
+
+      .amount label {
+        color: rgb(91, 71, 34, 0.7);
+      }
+
+      .amount input {
+        padding: 10px;
+        font-size: 14px;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid rgb(91, 71, 34, 0.7);
+      }
+
+      .amount input:focus {
+        border: 1.5px solid #5b4722;
+        outline: none;
+      }
+
+      .buy-btn {
+        display: flex;
+        width: 100%;
+        gap: 10px;
+      }
+      .cart {
+        width: 100%;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #5b4722;
+        border: 1.5px solid #5b4722;
+        color: white;
+      }
+
+      .cart:hover {
+        color: #5b4722;
+        cursor: pointer;
+        background-color: #fff9db;
+      }
+
+      .buy-it-now {
+        width: 100%;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #de7134;
+        border: 1.5px solid#de7134;
+        color: white;
+      }
+      .buy-it-now:hover {
+        color: #de7134;
+        cursor: pointer;
+        background-color: #fff9db;
+      }
+
+      /* section 4 */
+      .pagination-other {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+      }
+
+      .pagination-other p {
+        font-size: 30px;
+        color: #5b4722;
+      }
+
+      .other-img-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+      }
+
+      .other-img-container {
+        width: 256px;
+        height: 256px;
+      }
+
+      .other-img-container img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+
+      .other-item {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .product-price {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .product-price p {
+        font-size: 18px;
+      }
+    </style>
   </head>
+
   <body>
     <header>
       <div class="header-wrapper">
@@ -20,7 +300,15 @@
               <li><a href="./index.html">HOME</a></li>
               <li><a href="./about.html">ABOUT</a></li>
               <li><a href="./news.html">NEWS</a></li>
-              <li><a href="#" class="active">PRODUCTS</a></li>
+              <li>
+                <a href="./products.html">PRODUCTS</a>
+                <ul class="dropdown">
+                  <li><a href="./product_page.html">乳酪蛋糕</a></li>
+                  <li><a href="#">生乳捲</a></li>
+                  <li><a href="#">生日蛋糕</a></li>
+                  <li><a href="#">小點</a></li>
+                </ul>
+              </li>
               <li><a href="./contact.html">CONTACT</a></li>
             </ul>
           </div>
@@ -44,6 +332,126 @@
         </nav>
       </div>
     </header>
+
+    <!-- section 1 -->
+    <section class="pagination-banner">
+      <div class="banner-img-wrapper">
+        <img src="./assests/img/pagination-banner-cheesecake.jpg" alt="" />
+      </div>
+      <h3>乳 酪 蛋 糕 系 列</h3>
+    </section>
+
+    <!-- section 2 -->
+    <section class="pagination-ingredient">
+      <p>
+        乳酪蛋糕結合了綿密口感與清新香氣。這款蛋糕使用新鮮的奶油和優質的乳酪，讓每一口都充滿了奶香。蛋糕的製作過程中，選用的雞蛋被打發至輕盈蓬鬆，這不僅增添了蛋糕的柔軟度，也帶來了自然的甜味。每一層蛋糕皆融入了細膩的製作工藝，精準的烘烤溫度讓乳酪完美融化於蛋糕體中，帶來入口即化的美妙體驗。
+      </p>
+      <div class="ingredient-wrapper">
+        <div class="ingredient-item">
+          <div class="ingredient-img-container">
+            <img class="eggs" src="./assests/img/eggs.jpg" alt="" />
+          </div>
+          <p>嚴選放牧雞蛋</p>
+        </div>
+        <div class="ingredient-item">
+          <div class="ingredient-img-container">
+            <img src="./assests/img/flour.jpg" alt="" />
+          </div>
+          <p>日本北海道小麥粉</p>
+        </div>
+        <div class="ingredient-item">
+          <div class="ingredient-img-container">
+            <img class="milk" src="./assests/img/milk.jpg" alt="" />
+          </div>
+          <p>牧場直送新鮮牛乳</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 3 -->
+    <section class="pagination-productInfo">
+      <div class="intro-wrapper">
+        <div class="intro-img">
+          <div class="product-other">
+            <div class="product-other-img-wrapper">
+              <img src="./assests/img/1.jpg" alt="" />
+            </div>
+            <div class="product-other-img-wrapper">
+              <img src="./assests/img/2.jpg" alt="" />
+            </div>
+            <div class="product-other-img-wrapper">
+              <img src="./assests/img/3.jpg" alt="" />
+            </div>
+            <div class="product-other-img-wrapper">
+              <img src="./assests/img/4.jpg" alt="" />
+            </div>
+          </div>
+          <div class="product-main">
+            <img src="./assests/img/product_cheesecake.jpg" alt="" />
+          </div>
+        </div>
+        <div class="productIntro">
+          <h3>經典輕乳酪蛋糕</h3>
+          <p class="product-info-content">
+            經典輕乳酪蛋糕以其綿密柔滑的口感和清新的奶香而廣受喜愛，成為甜點愛好者心中的首選。這款蛋糕的主要材料包括新鮮的乳酪、奶油和雞蛋，通過精心的製作過程，展現出獨特的風味與質感。輕乳酪蛋糕的特點在於其輕盈的質地，將傳統乳酪蛋糕的濃郁與輕盈巧妙結合。
+          </p>
+          <p class="info-price">NT$ 450</p>
+          <div class="amount">
+            <label for="amount">數量</label>
+            <input type="number" name="amount" placeholder=" 請輸入數量" />
+          </div>
+          <div class="buy-btn">
+            <button class="cart">加入購物車</button>
+            <button class="buy-it-now">立即購買</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 4 -->
+    <section class="pagination-other">
+      <p>其他商品</p>
+      <div class="other-img-wrapper">
+        <div class="other-item">
+          <div class="other-img-container">
+            <img src="./assests/img/water_basque.jpg" alt="" />
+          </div>
+          <div class="product-price">
+            <p>水蒸巴斯克</p>
+            <p>450 NTD</p>
+          </div>
+        </div>
+
+        <div class="other-item">
+          <div class="other-img-container">
+            <img src="./assests/img/caramel_basque.jpg" alt="" />
+          </div>
+          <div class="product-price">
+            <p>焦糖巴斯克</p>
+            <p>480 NTD</p>
+          </div>
+        </div>
+
+        <div class="other-item">
+          <div class="other-img-container">
+            <img src="./assests/img/black_basque.jpg" alt="" />
+          </div>
+          <div class="product-price">
+            <p>濃黑巴斯克</p>
+            <p>500 NTD</p>
+          </div>
+        </div>
+        <div class="other-item">
+          <div class="other-img-container">
+            <img src="./assests/img/Basque_cheesecake.jpg" alt="" />
+          </div>
+          <div class="product-price">
+            <p>經典巴斯克</p>
+            <p>450 NTD</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer>
       <div class="footer-top">
         <img src="./assests/img/logo.svg" alt="" />
