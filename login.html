@@ -191,30 +191,29 @@
   <body>
     <header>
       <div class="header-wrapper">
-        <img src="./assests/img/logo.svg" alt="" />
+        <a href="./index.html"><img src="./assests/img/logo.svg" alt="" /></a>
         <nav>
-          <div class="nav-title">
-            <ul>
-              <li><a href="./index.html">HOME</a></li>
-              <li><a href="./about.html">ABOUT</a></li>
-              <li><a href="./news.html">NEWS</a></li>
-              <li>
-                <a href="./products.html">PRODUCTS</a>
-                <ul class="dropdown">
-                  <li><a href="./product_page.html">乳酪蛋糕</a></li>
-                  <li><a href="#">生乳捲</a></li>
-                  <li><a href="#">生日蛋糕</a></li>
-                  <li><a href="#">其他小點</a></li>
-                </ul>
-              </li>
-
-              <li><a href="./contact.html">CONTACT</a></li>
-            </ul>
-          </div>
+          <ul class="navlist">
+            <li>
+              <a href="./index.html">HOME</a>
+            </li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./news.html">NEWS</a></li>
+            <li>
+              <a href="./products.html">PRODUCTS</a>
+              <ul class="dropdown">
+                <li><a href="./product_page.html">乳酪蛋糕</a></li>
+                <li><a href="#">生乳捲</a></li>
+                <li><a href="#">生日蛋糕</a></li>
+                <li><a href="#">其他小點</a></li>
+              </ul>
+            </li>
+            <li><a href="./contact.html">CONTACT</a></li>
+          </ul>
           <div class="nav-icon">
             <ul>
               <li>
-                <a href="#"
+                <a href="./login.html"
                   ><img
                     src="./assests/img/account.svg"
                     class="account-icon"
@@ -227,6 +226,11 @@
                 /></a>
               </li>
             </ul>
+          </div>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </nav>
       </div>
@@ -317,5 +321,14 @@
         </p>
       </div>
     </footer>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navlist = document.querySelector(".navlist");
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navlist.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

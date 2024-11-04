@@ -41,23 +41,26 @@ header {
 nav {
   display: flex;
   width: 100%;
-  height: 30px;
+  height: auto;
   padding: 0px 40px;
   justify-content: flex-end;
   align-items: center;
 }
 
-.nav-title {
+.navlist {
   display: flex;
   width: 677px;
   gap: 25px;
   justify-content: flex-end;
   align-items: center;
-  transition: 0.25s;
 }
 
-.nav-title li:hover {
-  transform: scale(1.08);
+.navlist li {
+  transition: transform 0.3s ease;
+}
+
+.navlist li:hover {
+  transform: scale(1.2);
 }
 
 .nav-icon {
@@ -90,7 +93,7 @@ nav ul li {
   background-color: #fff9db;
   opacity: 0.95;
   border-radius: 5px;
-  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav ul li:hover .dropdown {
@@ -116,6 +119,76 @@ header a:visited {
 }
 header a:hover {
   color: #5b4722;
+}
+
+/* hamburger */
+
+.hamburger {
+  width: 40px;
+  height: 40px;
+  display: none;
+  flex-direction: column;
+}
+
+.hamburger span {
+  width: 95%;
+  height: 5px;
+  margin: 5px 0px;
+  background-color: black;
+  transform-origin: left center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* 轉換hamburger 型態  */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+/* 手機斷點 */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+  nav {
+    padding: 0px;
+  }
+  nav .navlist {
+    flex-direction: column;
+    position: absolute;
+    font-size: 28px;
+    font-weight: 600;
+    width: 100%;
+    height: calc(100vh - 100px);
+    /* 要減去nav的高度 */
+    top: 80px;
+    left: 0;
+    background-color: #fff9dbd9;
+    display: none;
+    /* 手機選單要消失 */
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav .nav-icon {
+    display: none;
+  }
+
+  nav .navlist.active {
+    display: flex;
+    /* 按下去之後選單要出現 */
+  }
+  nav .navlist li {
+    margin: 20px;
+  }
 }
 
 /* footer */

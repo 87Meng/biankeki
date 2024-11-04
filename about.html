@@ -5,211 +5,199 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>關於我們</title>
     <link rel="stylesheet" href="./css/style.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+    <style>
+      /* section 1 */
+      .banner-video {
+        width: 100%;
+        height: 750px;
+        overflow: hidden;
+      }
+
+      .banner-video video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+
+        /* 修正video邊框 bug */
+        margin-top: -2px;
+        margin-left: -1px;
+      }
+
+      /* section 2 */
+      .about-making {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding-bottom: 50px;
+      }
+
+      .about-content {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+      }
+
+      .cake-img-wrapper {
+        width: 100%;
+        height: auto;
+        padding-left: 155px;
+      }
+
+      .cheese-cake-q {
+        width: 65%;
+        height: auto;
+      }
+
+      .about-title {
+        margin: 50px 300px;
+      }
+
+      .about-title p {
+        text-align: center;
+        padding: 10px;
+      }
+
+      .about-title p,
+      .about-text1,
+      .about-text2 {
+        font-size: 30px;
+        width: 613px;
+        font-size: 24px;
+        padding: 10px;
+        background-color: #fff;
+      }
+
+      .about-text {
+        position: absolute;
+        width: 450px;
+        padding: 10px;
+        right: 260px;
+        bottom: 10px;
+      }
+
+      .about-text1 {
+        position: absolute;
+        width: 450px;
+        bottom: 65px;
+        z-index: 10;
+      }
+
+      .about-text2 {
+        position: absolute;
+        width: 450px;
+        left: 60px;
+        bottom: 10px;
+        z-index: 10;
+      }
+      /* section 3 */
+      .about-videos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 1800px;
+        position: relative;
+      }
+
+      .about-intro {
+        display: flex;
+        width: 500px;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+      }
+
+      .about-intro h3 {
+        color: #5b4722;
+        font-size: 24px;
+        letter-spacing: 2.4px;
+      }
+
+      .about-intro p {
+        color: #5b4722;
+        font-size: 16px;
+        line-height: 40px;
+        letter-spacing: 2.4px;
+      }
+
+      .about-intro-wrapper1 {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        height: 500px;
+        padding: 100px;
+      }
+
+      .about-intro-wrapper2 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 500px;
+        padding: 100px;
+      }
+
+      .about-intro-wrapper3 {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        height: 500px;
+        padding: 100px;
+      }
+
+      .sieve {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        z-index: -3;
+      }
+
+      .stir {
+        position: absolute;
+        top: 48%;
+        left: -5%;
+        z-index: -3;
+      }
+
+      .make {
+        position: absolute;
+        top: 74%;
+        left: 39%;
+        z-index: -3;
+      }
+    </style>
   </head>
-  <style>
-    /* section 1 */
-    .banner-video {
-      width: 100%;
-      height: 750px;
-      overflow: hidden;
-    }
 
-    .banner-video video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: 50% 50%;
-
-      /* 修正video邊框 bug */
-      margin-top: -1px;
-      margin-left: -1px;
-    }
-
-    /* section 2 */
-    .about-making {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      height: 910px;
-    }
-
-    .about-content {
-      width: 100%;
-      display: flex;
-      justify-content: flex-start;
-      position: relative;
-    }
-
-    .cake-img-wrapper {
-      width: 100%;
-      height: auto;
-      padding-left: 155px;
-    }
-
-    .cheese-cake-q {
-      width: 65%;
-      height: auto;
-    }
-
-    .about-title {
-      margin: 50px 300px;
-    }
-
-    .about-title p {
-      text-align: center;
-      padding: 10px;
-    }
-
-    .about-title p,
-    .about-text1,
-    .about-text2 {
-      font-size: 30px;
-      width: 613px;
-      font-size: 24px;
-      padding: 10px;
-      background-color: #fff;
-    }
-
-    .about-text {
-      position: absolute;
-      width: 450px;
-      padding: 10px;
-      right: 260px;
-      bottom: 10px;
-    }
-
-    .about-text1 {
-      position: absolute;
-      width: 450px;
-      /* right: 260px; */
-      bottom: 65px;
-      z-index: 10;
-    }
-
-    .about-text2 {
-      position: absolute;
-      width: 450px;
-      left: 60px;
-      bottom: 10px;
-      z-index: 10;
-    }
-    /* section 3 */
-    .about-videos {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-
-    .about-intro {
-      display: flex;
-      width: 500px;
-      height: auto;
-      flex-direction: column;
-      align-items: center;
-      gap: 50px;
-    }
-
-    .about-intro h3 {
-      color: #5b4722;
-      font-size: 24px;
-      letter-spacing: 2.4px;
-    }
-
-    .about-intro p {
-      color: #5b4722;
-      font-size: 16px;
-      line-height: 40px;
-      letter-spacing: 2.4px;
-    }
-
-    .about-intro-wrapper1 {
-      display: flex;
-      justify-content: flex-start;
-      width: 100%;
-      height: 600px;
-      padding: 100px;
-    }
-
-    .about-intro-wrapper2 {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      height: 600px;
-      padding: 100px;
-    }
-
-    .about-intro-wrapper3 {
-      display: flex;
-      justify-content: flex-end;
-      width: 100%;
-      height: 600px;
-      padding: 100px;
-    }
-
-    .about-intro1 {
-      display: flex;
-    }
-    .about-intro2 {
-      display: flex;
-    }
-    .about-intro3 {
-      display: flex;
-    }
-
-    .sieve {
-      position: absolute;
-      right: 6px;
-      top: 476px;
-      z-index: -1;
-    }
-
-    .stir {
-      position: absolute;
-      bottom: 1400px;
-      z-index: -1;
-    }
-
-    .sieve video,
-    .stir video,
-    .make video {
-      border-radius: 50%;
-    }
-    .make {
-      position: absolute;
-      right: 249px;
-      bottom: 64px;
-      z-index: -1;
-    }
-  </style>
   <body>
     <header>
       <div class="header-wrapper">
-        <img src="./assests/img/logo.svg" alt="" />
+        <a href="./index.html"><img src="./assests/img/logo.svg" alt="" /></a>
         <nav>
-          <div class="nav-title">
-            <ul>
-              <li><a href="./index.html">HOME</a></li>
-              <li><a href="./about.html">ABOUT</a></li>
-              <li><a href="./news.html">NEWS</a></li>
-              <li>
-                <a href="./products.html">PRODUCTS</a>
-                <ul class="dropdown">
-                  <li><a href="./product_page.html">乳酪蛋糕</a></li>
-                  <li><a href="#">生乳捲</a></li>
-                  <li><a href="#">生日蛋糕</a></li>
-                  <li><a href="#">其他小點</a></li>
-                </ul>
-              </li>
-              <li><a href="./contact.html">CONTACT</a></li>
-            </ul>
-          </div>
+          <ul class="navlist">
+            <li>
+              <a href="./index.html">HOME</a>
+            </li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./news.html">NEWS</a></li>
+            <li>
+              <a href="./products.html">PRODUCTS</a>
+              <ul class="dropdown">
+                <li><a href="./product_page.html">乳酪蛋糕</a></li>
+                <li><a href="#">生乳捲</a></li>
+                <li><a href="#">生日蛋糕</a></li>
+                <li><a href="#">其他小點</a></li>
+              </ul>
+            </li>
+            <li><a href="./contact.html">CONTACT</a></li>
+          </ul>
           <div class="nav-icon">
             <ul>
               <li>
@@ -226,6 +214,11 @@
                 /></a>
               </li>
             </ul>
+          </div>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </nav>
       </div>
@@ -277,16 +270,23 @@
           </div>
         </div>
       </div>
-
-      <svg width="500" height="500">
-        def
-
-        <video
-          src="./assests/video/sieve.mp4"
-          width="100%"
-          height="auto"
-          autoplay
-        ></video>
+      <svg class="sieve" width="50%" height="35%">
+        <defs>
+          <!-- 定義圓形的遮罩 -->
+          <clipPath id="circle-mask">
+            <circle cx="315" cy="260" r="200" />
+          </clipPath>
+        </defs>
+        <foreignObject width="100%" height="100%" clip-path="url(#circle-mask)">
+          <video
+            src="./assests/video/sieve.mp4"
+            width="100%"
+            height="100%"
+            style="object-fit: cover"
+            autoplay
+            loop
+          ></video>
+        </foreignObject>
       </svg>
 
       <div class="about-intro-wrapper2">
@@ -302,12 +302,24 @@
         </div>
       </div>
 
-      <video
-        src="./assests/video/stir.mp4"
-        width="700"
-        height="auto"
-        autoplay
-      ></video>
+      <svg class="stir" width="50%" height="35%">
+        <defs>
+          <!-- 定義圓形的遮罩 -->
+          <clipPath id="circle-mask">
+            <circle cx="315" cy="260" r="200" />
+          </clipPath>
+        </defs>
+        <foreignObject width="100%" height="100%" clip-path="url(#circle-mask)">
+          <video
+            src="./assests/video/stir.mp4"
+            width="100%"
+            height="100%"
+            style="object-fit: cover"
+            autoplay
+            loop
+          ></video>
+        </foreignObject>
+      </svg>
 
       <div class="about-intro-wrapper3">
         <div class="about-intro about-intro3">
@@ -322,13 +334,24 @@
           </div>
         </div>
       </div>
-
-      <video
-        src="./assests/video/make.mp4"
-        width="700"
-        height="auto"
-        autoplay
-      ></video>
+      <svg class="make" width="60%" height="30%">
+        <defs>
+          <!-- 定義圓形的遮罩 -->
+          <clipPath id="circle-mask">
+            <circle cx="375" cy="270" r="270" />
+          </clipPath>
+        </defs>
+        <foreignObject width="100%" height="100%" clip-path="url(#circle-mask)">
+          <video
+            src="./assests/video/make.mp4"
+            width="100%"
+            height="100%"
+            autoplay
+            loop
+            style="object-fit: cover"
+          ></video>
+        </foreignObject>
+      </svg>
     </section>
 
     <footer>
@@ -367,5 +390,14 @@
         </p>
       </div>
     </footer>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navlist = document.querySelector(".navlist");
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navlist.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

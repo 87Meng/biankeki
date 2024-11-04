@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>勉Keki</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./index.html" />
 
     <!-- icons -->
     <link
@@ -38,296 +39,298 @@
 
     <script src="./js/introAnimation.js"></script>
     <script src="./js/slider.js"></script>
+
+    <style>
+      /* intro animation */
+      .intro-animation {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff9db;
+        z-index: 15;
+      }
+
+      .hero {
+        width: 300px;
+        height: auto;
+      }
+
+      .hero img {
+        width: 100%;
+        height: 100%;
+      }
+      /* section 1  */
+      .index-banner {
+        display: flex;
+        width: 100%;
+        height: 750px;
+        justify-content: center;
+        align-items: center;
+        gap: 90px;
+        position: relative;
+        top: 100px;
+      }
+
+      .cheese-cake {
+        width: 480px;
+        height: auto;
+        position: absolute;
+        top: 26px;
+      }
+
+      .fruit-cake {
+        width: 480px;
+        height: auto;
+        position: absolute;
+        right: 10px;
+        bottom: 65px;
+      }
+
+      .banner-img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+      }
+
+      .banner-title {
+        color: #5b4722;
+        writing-mode: vertical-rl;
+        line-height: 3.5;
+        letter-spacing: 5px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      /* section 2  */
+
+      .index-news {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        margin-top: 150px;
+        gap: 100px;
+      }
+
+      .index-news-title {
+        color: #5b4722;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-size: 30px;
+        padding: 10px;
+        font-weight: bold;
+        border: #5b4722;
+        background: white;
+        width: 300px;
+        padding: 15px 20px;
+        border-radius: 40px;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+      }
+
+      .news-img {
+        width: 400px;
+      }
+
+      .news-img img {
+        width: 100%;
+      }
+
+      .news-text {
+        color: #5b4722;
+        display: flex;
+        height: 245px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        width: 450px;
+      }
+
+      .text-title {
+        font-weight: 600;
+      }
+
+      .news-text p {
+        width: 100%;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 1px;
+      }
+
+      .news-rm-btn {
+        height: 245px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+      button {
+        border-radius: 10px;
+        background: var(--btn-color, #de7134);
+        border: none;
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        width: 150px;
+        height: auto;
+        padding: 10px 0px;
+        cursor: pointer;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: #5b4722;
+        width: 20px;
+        height: 40px;
+      }
+
+      .swiper-button-next:after,
+      .swiper-button-prev:after {
+        font-size: 24px;
+      }
+      /* section 3  */
+      .index-about {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 750px;
+        padding: 100px 90px;
+        margin: 80px 0px;
+      }
+
+      .index-about-wrapper {
+        display: flex;
+        width: 100%;
+        height: 500px;
+        gap: 40px;
+      }
+
+      .about-img {
+        display: flex;
+        width: 430px;
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .about-img img {
+        width: auto;
+        height: 100%;
+      }
+
+      .about-text {
+        display: flex;
+        width: 607px;
+        height: 500px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: auto;
+      }
+
+      .about-text h3 {
+        color: #5b4722;
+        font-size: 30px;
+        background: white;
+        width: 300px;
+        padding: 15px 20px;
+        border-radius: 40px;
+        text-align: center;
+      }
+
+      .about-text p {
+        color: #5b4722;
+        font-size: 18px;
+        font-style: normal;
+        line-height: 35px;
+        letter-spacing: 2px;
+      }
+
+      /* section 4  */
+
+      .index-products {
+        display: flex;
+        width: 100%;
+        height: auto;
+        padding: 50px 60px;
+        flex-direction: column;
+        gap: 77px;
+      }
+
+      .index-products-title {
+        display: flex;
+      }
+
+      .index-products-title h3 {
+        color: #5b4722;
+        font-size: 30px;
+        background: white;
+        width: 300px;
+        padding: 15px 20px;
+        border-radius: 40px;
+        text-align: center;
+      }
+
+      .product-list-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+      }
+
+      .product-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+      }
+
+      .product {
+        display: flex;
+        width: 327px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+
+      .product img {
+        width: 100%;
+        height: auto;
+      }
+
+      .product-name {
+        color: #5b4722;
+        font-size: 18px;
+      }
+
+      .price {
+        color: #5b4722;
+        font-size: 14px;
+      }
+    </style>
   </head>
-  <style>
-    /* intro animation */
-    .intro-animation {
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #fff9db;
-      z-index: 15;
-    }
 
-    .hero {
-      width: 300px;
-      height: auto;
-    }
-
-    .hero img {
-      width: 100%;
-      height: 100%;
-    }
-    /* section 1  */
-    .index-banner {
-      display: flex;
-      width: 100%;
-      height: 750px;
-      justify-content: center;
-      align-items: center;
-      gap: 90px;
-      position: relative;
-      top: 100px;
-    }
-
-    .cheese-cake {
-      width: 480px;
-      height: auto;
-      position: absolute;
-      top: 26px;
-    }
-
-    .fruit-cake {
-      width: 480px;
-      height: auto;
-      position: absolute;
-      right: 10px;
-      bottom: 65px;
-    }
-
-    .banner-img {
-      width: 100%;
-      height: auto;
-      margin: 0;
-      padding: 0;
-    }
-
-    .banner-title {
-      color: #5b4722;
-      writing-mode: vertical-rl;
-      line-height: 3.5;
-      letter-spacing: 5px;
-      font-size: 20px;
-      font-weight: 500;
-    }
-
-    /* section 2  */
-
-    .index-news {
-      display: flex;
-      width: 100%;
-      height: auto;
-      flex-direction: column;
-      /* justify-content: center; */
-      align-items: center;
-      margin-top: 150px;
-      gap: 100px;
-    }
-
-    .index-news-title {
-      color: #5b4722;
-      width: 100%;
-      height: auto;
-      text-align: center;
-      font-size: 30px;
-      padding: 10px;
-      font-weight: bold;
-      border: #5b4722;
-      background: white;
-      width: 300px;
-      padding: 15px 20px;
-      border-radius: 40px;
-    }
-
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 80px;
-    }
-
-    .news-img {
-      width: 400px;
-    }
-
-    .news-img img {
-      width: 100%;
-    }
-
-    .news-text {
-      color: #5b4722;
-      display: flex;
-      height: 245px;
-      flex-direction: column;
-      justify-content: center;
-      gap: 50px;
-      width: 450px;
-    }
-
-    .text-title {
-      font-weight: 600;
-    }
-
-    .news-text p {
-      width: 100%;
-      font-size: 18px;
-      line-height: 25px;
-      letter-spacing: 1px;
-    }
-
-    .news-rm-btn {
-      height: 245px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-    }
-
-    button {
-      border-radius: 10px;
-      background: var(--btn-color, #de7134);
-      border: none;
-      color: #fff;
-      font-size: 14px;
-      text-align: center;
-      width: 150px;
-      height: auto;
-      padding: 10px 0px;
-      cursor: pointer;
-    }
-
-    .swiper-button-next,
-    .swiper-button-prev {
-      color: #5b4722;
-      width: 20px;
-      height: 40px;
-    }
-
-    .swiper-button-next:after,
-    .swiper-button-prev:after {
-      font-size: 24px;
-    }
-    /* section 3  */
-    .index-about {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      height: 750px;
-      padding: 100px 90px;
-      margin: 80px 0px;
-    }
-
-    .index-about-wrapper {
-      display: flex;
-      width: 100%;
-      height: 500px;
-      gap: 40px;
-    }
-
-    .about-img {
-      display: flex;
-      width: 430px;
-      height: 500px;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .about-img img {
-      width: auto;
-      height: 100%;
-    }
-
-    .about-text {
-      display: flex;
-      width: 607px;
-      height: 500px;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      gap: auto;
-    }
-
-    .about-text h3 {
-      color: #5b4722;
-      font-size: 30px;
-      background: white;
-      width: 300px;
-      padding: 15px 20px;
-      border-radius: 40px;
-      text-align: center;
-    }
-
-    .about-text p {
-      color: #5b4722;
-      font-size: 18px;
-      font-style: normal;
-      line-height: 35px;
-      letter-spacing: 2px;
-    }
-
-    /* section 4  */
-
-    .index-products {
-      display: flex;
-      width: 100%;
-      height: auto;
-      padding: 50px 60px;
-      flex-direction: column;
-      gap: 77px;
-    }
-
-    .index-products-title {
-      display: flex;
-    }
-
-    .index-products-title h3 {
-      color: #5b4722;
-      font-size: 30px;
-      background: white;
-      width: 300px;
-      padding: 15px 20px;
-      border-radius: 40px;
-      text-align: center;
-    }
-
-    .product-list-wrapper {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 80px;
-    }
-
-    .product-list {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 80px;
-    }
-
-    .product {
-      display: flex;
-      width: 327px;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 20px;
-    }
-
-    .product img {
-      width: 100%;
-      height: auto;
-    }
-
-    .product-name {
-      color: #5b4722;
-      font-size: 18px;
-    }
-
-    .price {
-      color: #5b4722;
-      font-size: 14px;
-    }
-  </style>
   <body>
     <!-- intro animation -->
     <section class="intro-animation">
@@ -352,29 +355,27 @@
         <img src="./assests/img/logo.svg" alt="" />
       </div>
     </section>
-
     <header>
       <div class="header-wrapper">
-        <img src="./assests/img/logo.svg" alt="" />
+        <a href="./index.html"><img src="./assests/img/logo.svg" alt="" /></a>
         <nav>
-          <div class="nav-title">
-            <ul>
-              <li><a href="#">HOME</a></li>
-              <li><a href="./about.html">ABOUT</a></li>
-              <li><a href="./news.html">NEWS</a></li>
-              <li>
-                <a href="./products.html">PRODUCTS</a>
-                <ul class="dropdown">
-                  <li><a href="./product_page.html">乳酪蛋糕</a></li>
-                  <li><a href="#">生乳捲</a></li>
-                  <li><a href="#">生日蛋糕</a></li>
-                  <li><a href="#">其他小點</a></li>
-                </ul>
-              </li>
-
-              <li><a href="./contact.html">CONTACT</a></li>
-            </ul>
-          </div>
+          <ul class="navlist">
+            <li>
+              <a href="./index.html">HOME</a>
+            </li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./news.html">NEWS</a></li>
+            <li>
+              <a href="./products.html">PRODUCTS</a>
+              <ul class="dropdown">
+                <li><a href="./product_page.html">乳酪蛋糕</a></li>
+                <li><a href="#">生乳捲</a></li>
+                <li><a href="#">生日蛋糕</a></li>
+                <li><a href="#">其他小點</a></li>
+              </ul>
+            </li>
+            <li><a href="./contact.html">CONTACT</a></li>
+          </ul>
           <div class="nav-icon">
             <ul>
               <li>
@@ -391,6 +392,11 @@
                 /></a>
               </li>
             </ul>
+          </div>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </nav>
       </div>
@@ -599,5 +605,14 @@
         }, 1000); // 3秒後顯示圖片
       });
     </script> -->
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navlist = document.querySelector(".navlist");
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navlist.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
