@@ -14,25 +14,31 @@
       .login-wrapper {
         display: flex;
         height: auto;
+        width: 100%;
         padding-top: 100px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 10px;
+        max-width: 100%;
       }
 
       .login-content {
         padding-top: 20px;
         display: flex;
+        max-width: 320px;
+        width: 100%;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         gap: 100px;
         color: #5b4722;
+        border: 1px solid red;
       }
 
       .login-content-title {
         display: flex;
-        width: 734px;
+        width: 100%;
         height: 253px;
         padding: 10px;
         flex-direction: column;
@@ -68,6 +74,7 @@
 
       .login-keyin-section {
         display: flex;
+        width: 100%;
         flex-direction: column;
         align-items: center;
         gap: 30px;
@@ -76,7 +83,8 @@
         display: flex;
         flex-direction: column;
         gap: 50px;
-        width: 320px;
+        width: 100%;
+        border: 1px solid red;
       }
 
       .login-keyin-input {
@@ -90,6 +98,7 @@
         width: 100%;
         height: 50px;
         padding: 0px 10px;
+        max-width: 100%;
       }
 
       .login-keyin-input label {
@@ -127,13 +136,16 @@
       .btn {
         display: flex;
         flex-direction: column;
+        width: 60%;
         gap: 50px;
         margin-top: 50px;
+        border: 1px solid red;
+        align-items: center;
       }
 
       .login-btn {
         display: flex;
-        width: 190px;
+        width: 100%;
         padding: 10px;
         justify-content: center;
         align-items: center;
@@ -257,14 +269,13 @@
               <label for="password">密碼</label>
               <input id="password" type="password" />
             </div>
-          </div>
-
-          <div class="remember-me-container">
-            <div class="remember-me">
-              <input id="remember-me" type="checkbox" />
-              <label for="remember-me">記住我</label>
+            <div class="remember-me-container">
+              <div class="remember-me">
+                <input id="remember-me" type="checkbox" />
+                <label for="remember-me">記住我</label>
+              </div>
+              <p style="display: inline-block">忘記密碼</p>
             </div>
-            <p style="display: inline-block">忘記密碼</p>
           </div>
 
           <div class="btn">

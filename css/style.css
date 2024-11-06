@@ -30,6 +30,7 @@ header {
   top: 0px;
   z-index: 10;
   opacity: 0.95;
+  border: 1px;
 }
 
 .header-wrapper {
@@ -49,7 +50,7 @@ nav {
 
 .navlist {
   display: flex;
-  width: 677px;
+  width: auto;
   gap: 25px;
   justify-content: flex-end;
   align-items: center;
@@ -65,7 +66,8 @@ nav {
 
 .nav-icon {
   display: flex;
-  width: 116px;
+  width: auto;
+  justify-content: flex-end;
   align-items: center;
   gap: 6px;
   position: relative;
@@ -122,7 +124,6 @@ header a:hover {
 }
 
 /* hamburger */
-
 .hamburger {
   width: 40px;
   height: 40px;
@@ -161,16 +162,18 @@ header a:hover {
   nav {
     padding: 0px;
   }
+
   nav .navlist {
     flex-direction: column;
     position: absolute;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
     width: 100%;
     height: calc(100vh - 100px);
     /* 要減去nav的高度 */
     top: 80px;
     left: 0;
+    gap: 10px;
     background-color: #fff9dbd9;
     display: none;
     /* 手機選單要消失 */
@@ -178,16 +181,41 @@ header a:hover {
     align-items: center;
   }
 
-  nav .nav-icon {
-    display: none;
-  }
-
   nav .navlist.active {
     display: flex;
     /* 按下去之後選單要出現 */
   }
+
+  nav .nav-icon {
+    position: absolute;
+    display: none;
+    top: calc(100vh - 80px);
+    left: 0;
+    width: 100%;
+    display: none;
+  }
+
+  .nav-icon.active {
+    display: flex;
+    justify-content: center;
+  }
+
   nav .navlist li {
     margin: 20px;
+  }
+
+  .dropdown {
+    top: -40px;
+    left: 100%;
+    box-shadow: none;
+    width: 100%;
+  }
+  .dropdown li {
+    width: 100%;
+  }
+
+  .navlist li:hover {
+    display: flex;
   }
 }
 
@@ -195,7 +223,7 @@ header a:hover {
 footer {
   display: flex;
   width: 100%;
-  height: 450px;
+  height: auto;
   flex-direction: column;
   align-items: center;
   padding: 0px 37px;
@@ -204,16 +232,16 @@ footer {
 
 .footer-top {
   display: flex;
-  height: 300px;
+  height: auto;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 60px;
   align-self: stretch;
 }
 
 .footer-top img {
   display: flex;
-  width: 231px;
+  width: 230px;
   height: 300px;
   justify-content: center;
   align-items: center;
@@ -221,7 +249,7 @@ footer {
 }
 .footer-info {
   display: flex;
-  width: 368px;
+  width: 100%;
   height: 300px;
   justify-content: center;
   align-items: center;
@@ -236,14 +264,12 @@ footer {
   flex-direction: column;
   height: 300px;
   justify-content: center;
-  align-items: center;
-  align-self: stretch;
 }
 
 .footer-list ul {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 .footer-list a {
@@ -268,6 +294,7 @@ footer a:visited {
 }
 .footer-icon {
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
   gap: 64px;
@@ -290,8 +317,41 @@ footer a:visited {
   height: 115px;
   align-items: center;
   align-self: stretch;
+  margin-top: 50px;
+  font-size: 14px;
 }
 
 .footer-bot p {
   line-height: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-top img {
+    height: auto;
+  }
+  .footer-info {
+    display: flex;
+    justify-content: flex-start;
+    height: auto;
+  }
+  .footer-list {
+    display: none;
+  }
+
+  .footer-icon {
+    display: flex;
+    justify-content: flex-start;
+    height: auto;
+  }
 }

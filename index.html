@@ -54,7 +54,7 @@
       }
 
       .hero {
-        width: 300px;
+        width: 250px;
         height: auto;
       }
 
@@ -334,23 +334,6 @@
   <body>
     <!-- intro animation -->
     <section class="intro-animation">
-      <svg width="400" height="400" viewBox="-100 -100 200 200">
-        <defs>
-          <path id="text-arc" d="M 0, 50 A 50 50 0 1 1 1,50" />
-        </defs>
-
-        <text
-          fill="#de7134"
-          font-family="Open Huninn"
-          font-size="12px"
-          font-weight="bold"
-          letter-spacing="2px"
-        >
-          <textPath href="#text-arc">
-            一口接著一口，勉客氣啦！客氣可就吃不到了呢！
-          </textPath>
-        </text>
-      </svg>
       <div class="hero">
         <img src="./assests/img/logo.svg" alt="" />
       </div>
@@ -607,6 +590,13 @@
     </script> -->
 
     <script>
+      window.addEventListener("load", () => {
+        document.querySelector(".banner-img").style.display = "block";
+        // 設定文字顯示的時間（以毫秒計算）
+        setTimeout(() => {
+          document.querySelector(".banner-img").style.opacity = 1;
+        }, 1000); // 3秒後顯示圖片
+      });
       const hamburger = document.querySelector(".hamburger");
       const navlist = document.querySelector(".navlist");
       hamburger.addEventListener("click", () => {
