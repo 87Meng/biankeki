@@ -16,6 +16,7 @@
         width: 100%;
         height: 750px;
         overflow: hidden;
+        min-width: 375px;
       }
 
       .banner-video video {
@@ -88,7 +89,7 @@
         position: absolute;
         width: 450px;
         bottom: 65px;
-        z-index: 10;
+        z-index: 3;
       }
 
       .about-text2 {
@@ -96,7 +97,7 @@
         width: 450px;
         left: 60px;
         bottom: 10px;
-        z-index: 10;
+        z-index: 3;
       }
       /* section 3 */
       .about-videos {
@@ -177,6 +178,13 @@
       video {
         position: relative;
         z-index: 4;
+      }
+
+      @media screen and (max-width: 960px) {
+        .about-videos {
+          border: 1px solid red;
+          align-items: center;
+        }
       }
     </style>
   </head>
