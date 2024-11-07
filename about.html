@@ -38,6 +38,28 @@
         width: 100%;
         height: auto;
         padding-bottom: 50px;
+        overflow: hidden;
+      }
+      .about-title {
+        width: auto;
+        margin: 50px 300px;
+        min-width: 375px;
+      }
+
+      .about-title p {
+        text-align: center;
+        font-size: 24px;
+        padding: 10px;
+        background-color: #fff;
+        width: 100%;
+      }
+
+      .about-text1,
+      .about-text2 {
+        width: 613px;
+        font-size: 24px;
+        padding: 10px;
+        background-color: #fff;
       }
 
       .about-content {
@@ -51,30 +73,12 @@
         width: 100%;
         height: auto;
         padding-left: 155px;
+        min-width: 380px;
       }
 
       .cheese-cake-q {
         width: 65%;
         height: auto;
-      }
-
-      .about-title {
-        margin: 50px 300px;
-      }
-
-      .about-title p {
-        text-align: center;
-        padding: 10px;
-      }
-
-      .about-title p,
-      .about-text1,
-      .about-text2 {
-        font-size: 30px;
-        width: 613px;
-        font-size: 24px;
-        padding: 10px;
-        background-color: #fff;
       }
 
       .about-text {
@@ -83,21 +87,22 @@
         padding: 10px;
         right: 260px;
         bottom: 10px;
+        min-width: 300px;
       }
 
       .about-text1 {
         position: absolute;
-        width: 450px;
+        width: 100%;
         bottom: 65px;
-        z-index: 3;
+        z-index: 2;
       }
 
       .about-text2 {
         position: absolute;
-        width: 450px;
+        width: 100%;
         left: 60px;
         bottom: 10px;
-        z-index: 3;
+        z-index: 2;
       }
       /* section 3 */
       .about-videos {
@@ -154,6 +159,11 @@
         padding: 100px;
       }
 
+      .about-intro-text {
+        min-width: 375px;
+        width: 100%;
+      }
+
       .sieve {
         position: absolute;
         top: 10%;
@@ -181,9 +191,62 @@
       }
 
       @media screen and (max-width: 960px) {
-        .about-videos {
-          border: 1px solid red;
+        .about-content {
+          flex-direction: column;
           align-items: center;
+          /* border: 1px solid red; */
+          gap: 5px;
+        }
+
+        .about-title {
+          display: flex;
+        }
+
+        .about-text {
+          width: 50%;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          right: 0;
+          bottom: 0;
+        }
+
+        .about-text1 {
+          position: relative;
+          bottom: 0;
+        }
+        .about-text2 {
+          position: relative;
+          left: 0;
+          bottom: 0;
+        }
+
+        .about-text p {
+          font-size: 18px;
+        }
+
+        .about-videos {
+          padding-top: 80px;
+          align-items: center;
+          height: auto;
+        }
+
+        .about-intro-wrapper1,
+        .about-intro-wrapper2,
+        .about-intro-wrapper3 {
+          flex-direction: column;
+          align-items: center;
+          height: auto;
+          padding: 0;
+        }
+
+        .sieve,
+        .stir,
+        .make {
+          position: relative;
+          top: 0;
+          left: 0;
         }
       }
     </style>
