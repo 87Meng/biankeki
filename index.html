@@ -597,11 +597,15 @@
           document.querySelector(".banner-img").style.opacity = 1;
         }, 1000); // 3秒後顯示圖片
       });
+
+      // 漢堡選單
       const hamburger = document.querySelector(".hamburger");
       const navlist = document.querySelector(".navlist");
+      const navIcon = document.querySelector(".nav-icon");
       hamburger.addEventListener("click", () => {
         hamburger.classList.toggle("active");
         navlist.classList.toggle("active");
+        navIcon.classList.toggle("active");
       });
     </script>
   </body>

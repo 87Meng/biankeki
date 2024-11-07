@@ -166,7 +166,7 @@ header a:hover {
   nav .navlist {
     flex-direction: column;
     position: absolute;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     width: 100%;
     height: calc(100vh - 100px);
@@ -189,7 +189,7 @@ header a:hover {
   nav .nav-icon {
     position: absolute;
     display: none;
-    top: calc(100vh - 80px);
+    top: calc(100vh - 120px);
     left: 0;
     width: 100%;
     display: none;
@@ -211,7 +211,7 @@ header a:hover {
     width: 100%;
   }
   .dropdown li {
-    width: 100%;
+    width: auto;
   }
 
   .navlist li:hover {

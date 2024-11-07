@@ -13,6 +13,7 @@
   <style>
     /* section 1  */
     .bg-banner {
+      min-width: 375px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -57,6 +58,7 @@
 
     /* section 2 */
     .contact-info {
+      min-width: 375px;
       display: flex;
       width: 100%;
       padding: 67px 200px;
@@ -77,11 +79,12 @@
 
     /* section 3 */
     .contact-form {
+      min-width: 375px;
       display: flex;
       flex-direction: column;
       align-items: center;
       height: auto;
-      padding: 50px;
+
       gap: 50px;
     }
     .form-title {
@@ -90,15 +93,17 @@
     }
 
     form {
+      min-width: 375px;
       border-radius: 30px;
       background: #f8e688;
       width: 500px;
-      height: 700px;
+      height: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 50px;
+      padding: 40px 50px;
     }
 
     .form-content {
@@ -181,6 +186,23 @@
       color: white;
       background-color: #5b4722;
       cursor: pointer;
+    }
+
+    @media screen and (max-width: 768px) {
+      .contact-info-text-wrapper {
+        width: 350px;
+      }
+      .contact-info {
+        flex-direction: column;
+      }
+      .form-title {
+        width: 290px;
+      }
+      .form-content-line {
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+      }
     }
   </style>
   <body>
@@ -350,9 +372,11 @@
     <script>
       const hamburger = document.querySelector(".hamburger");
       const navlist = document.querySelector(".navlist");
+      const navIcon = document.querySelector(".nav-icon");
       hamburger.addEventListener("click", () => {
         hamburger.classList.toggle("active");
         navlist.classList.toggle("active");
+        navIcon.classList.toggle("active");
       });
     </script>
   </body>
