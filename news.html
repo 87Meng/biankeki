@@ -18,6 +18,7 @@
         align-items: center;
         margin-top: 100px;
         width: 100%;
+        min-width: 375px;
         height: 500px;
         background: url("./assests/img/banner.jpg") lightgray 50% / cover;
       }
@@ -54,35 +55,39 @@
       .banner-text p {
         font-size: 20px;
       }
+
       /* section 2  */
       .news-wrapper {
+        min-width: 400px;
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
-        padding: 30px;
+        padding: 20px;
       }
 
       .news-container {
         display: flex;
         align-items: center;
         width: 100%;
-        height: 350px;
+        height: auto;
         padding: 16px 50px;
-        /* border-bottom: 1px solid rgb(91, 71, 34, 0.4); */
-        border: 1px solid red;
+        border-bottom: 1px solid rgb(91, 71, 34, 0.4);
       }
 
       .news-content {
+        width: 100%;
         height: auto;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
+        padding: 0;
         gap: 100px;
       }
 
       .news-img-container {
         width: 380px;
         height: auto;
+        min-width: 300px;
       }
       .news-img-container img {
         width: 100%;
@@ -91,12 +96,13 @@
       .news-text {
         display: flex;
         flex-direction: column;
+        width: 380px;
         height: auto;
-        gap: 90px;
+        gap: 70px;
       }
 
       .news-text p {
-        width: 318px;
+        width: auto;
       }
 
       .news-date {
@@ -107,7 +113,6 @@
         display: flex;
         width: 100%;
         gap: 130px;
-        border: 1px solid red;
       }
 
       .news-paragraph {
@@ -124,10 +129,9 @@
       .news-rm-btn {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         align-items: end;
-        width: 100%;
-        gap: 200px;
-        border: 1px solid red;
+        width: auto;
       }
 
       .news-title {
@@ -181,9 +185,42 @@
         color: white;
       }
 
-      @media screen and (max-width: 768px) {
-        .news-container {
+      @media screen and (max-width: 1100px) {
+        .news-content {
+          gap: 20px;
+        }
+        .paragraph-btn {
+          gap: 0px;
+        }
+      }
+
+      @media screen and (max-width: 960px) {
+        .news-content {
           flex-direction: column;
+          align-items: center;
+        }
+        .paragraph-btn {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          width: 100%;
+        }
+        .news-text {
+          width: 380px;
+          gap: 50px;
+        }
+
+        .news-text p {
+          width: auto;
+        }
+        .news-paragraph {
+          gap: 20px;
+        }
+        .news-rm-btn {
+          flex-direction: row;
+          justify-content: space-between;
+          width: 380px;
         }
       }
     </style>
@@ -255,6 +292,7 @@
           <div class="news-img-container">
             <img src="./assests/img/news_1.jpg" alt="" />
           </div>
+
           <div class="paragraph-btn">
             <div class="news-text">
               <p class="news-date">2024/09/19</p>
@@ -263,7 +301,7 @@
                   「勉keki 開課啦！」打造屬於你的專屬甜點
                 </p>
                 <p>
-                  嘿，你是不是也跟我們一樣，吃甜點不過癮還想自己動手做呢？來來來，這次我們不賣關子，直接開班教你如何做出甜到心坎裡的...
+                  嘿，你是不是也跟我們一樣，吃甜點不過癮還想自己動手做呢？來來來，這次我們不賣關子，直接開班教你如何做出甜到心坎裡的甜點！這堂課，我們將從...
                 </p>
               </div>
             </div>
@@ -288,7 +326,7 @@
                 <p class="news-title">2024舊物盛典－出市確定！</p>
                 <p>
                   勉keki
-                  的首次出攤就在舊物盛典！屆時將準備各式各樣的甜點，特別是我們的經典乳酪蛋糕和限定口味生乳捲﹐還有限量周邊，一...
+                  的首次出攤就在舊物盛典！屆時將準備各式各樣的甜點，特別是我們的經典乳酪蛋糕和限定口味生乳捲﹐還有限量周邊，一定要來看看！這次我們不...
                 </p>
               </div>
             </div>
@@ -316,7 +354,7 @@
                 </p>
                 <p>
                   感謝各位愛吃 keki 的朋友支持！勉keki
-                  榮獲網路票選2024年度全台必吃甜點品牌第二名！！為了感謝各位厚愛，經典系列商品全...
+                  榮獲網路票選2024年度全台必吃甜點品牌第二名！！為了感謝各位厚愛，經典系列商品全數推出限時優惠！凡於活動...
                 </p>
               </div>
             </div>
@@ -340,7 +378,7 @@
               <div class="news-paragraph">
                 <p class="news-title">新品上市－綜合水果乳酪蛋糕</p>
                 <p>
-                  初夏水果風味鉅獻！乳酪的細膩口感與芒果、草莓的清爽酸甜，在每一口中交織出獨特的風味，讓人欲罷不能！商品詳情請點選...
+                  初夏水果風味鉅獻！乳酪的細膩口感與芒果、草莓的清爽酸甜，在每一口中交織出獨特的風味，讓人欲罷不能！商品詳情請點選下方連結，立即了解更多...
                 </p>
               </div>
             </div>
