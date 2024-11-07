@@ -169,7 +169,7 @@ header a:hover {
     font-size: 20px;
     font-weight: 600;
     width: 100%;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 100px);
     /* 要減去nav的高度 */
     top: 80px;
     left: 0;
@@ -189,7 +189,7 @@ header a:hover {
   nav .nav-icon {
     position: absolute;
     display: none;
-    top: calc(100vh - 55px);
+    height: calc(100vh - 80px);
     left: 0;
     width: 100%;
     display: none;
