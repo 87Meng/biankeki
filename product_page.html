@@ -131,8 +131,9 @@
 
       .intro-img {
         display: flex;
+        justify-content: center;
         gap: 20px;
-        width: 100%;
+        width: auto;
       }
 
       .product-other {
@@ -342,6 +343,9 @@
       }
 
       @media screen and (max-width: 480px) {
+        .intro-img {
+          width: 100%;
+        }
         .twoImg-container {
           flex-direction: column;
           align-items: center;
